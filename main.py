@@ -7,23 +7,16 @@ from os import getenv
 app = Flask(__name__)
 app.secret_key = getenv('FLASK_KEY')
 
-coming_soon_active = True
-
 @app.context_processor
 def inject_datetime():
     return {'datetime': datetime}
 
 @app.route("/coming-soon")
 def coming_soon():
-    if coming_soon_active:
-        return render_template("coming_soon.html")
-    else:
-        return render_template("error_404.html")
+    return render_template("coming_soon.html")
 
 @app.route("/", methods=['GET', 'POST'])
 def home():
-    if coming_soon_active:
-        return redirect(url_for("coming_soon"))
     form = ReservationForm()
     if request.method == "POST":
         seats = form.seats.data
@@ -36,14 +29,10 @@ def home():
 
 @app.route("/menu")
 def menu():
-    if coming_soon_active:
-        return redirect(url_for("coming_soon"))
     return render_template("menu.html")
 
 @app.route("/contact", methods=['GET', 'POST'])
 def contact():
-    if coming_soon_active:
-        return redirect(url_for("coming_soon"))
     form = ReservationForm()
     if form.validate_on_submit():
         name = form.name.data
@@ -60,8 +49,6 @@ def contact():
 
 @app.route("/about")
 def about():
-    if coming_soon_active:
-        return redirect(url_for("coming_soon"))
     return render_template("about.html")
 
 @app.errorhandler(404)
