@@ -160,6 +160,3 @@ This project is licensed under the MIT License.
 **Español**
 
 Este proyecto está licenciado bajo la Licencia MIT.
-
----
-
