@@ -56,7 +56,7 @@ Cafe/
 
 ---
 
-## 🖼️ Showcase
+## 📸 Showcase
 
 _(Screenshots and previews will be added here in the future)_
 
