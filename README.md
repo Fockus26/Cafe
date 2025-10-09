@@ -12,20 +12,41 @@ Cafe is a web project created as a personal initiative to provide a digital solu
 
 ## ✨ Features
 
-- 📑 Multi-page site: Home, Menu, About, Contact  
-- 🍽️ Menu page designed with HTML & CSS for visual impact  
-- 📨 Contact page integrated with WhatsApp link  
-- ⏳ Coming Soon page for future features  
-- ⚠️ Custom 404 error page  
-- 🎨 Responsive design using CSS and external libraries (Google Fonts, FontAwesome, Flatpickr)  
+- 📑 Multi-page site: Home, Menu, About, Contact
+- 🍽️ Menu page designed with HTML & CSS for visual impact
+- 📨 Contact page integrated with WhatsApp link
+- ⏳ Coming Soon page for future features
+- ⚠️ Custom 404 error page
+- 🎨 Responsive design using CSS and external libraries (Google Fonts, FontAwesome, Flatpickr)
+
+---
+
+## 📸 Showcase
+
+### 🏠 Homepage
+
+![Homepage 1](./static/assets/gifs/Home%201.gif)
+![Homepage 2](./static/assets/gifs/Home%202.gif)
+
+### 📝 Menu
+
+![Menu](./static/assets/gifs/Menu.gif)
+
+### 📞 Contact
+
+![Contact](./static/assets/gifs/Contact.gif)
+
+### 👤 About
+
+![About](./static/assets/screenshots/About.png)
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Backend:** Flask (Python), Jinja Templates  
-- **Frontend:** HTML5, CSS3, JavaScript  
-- **Libraries & Tools:** Bootstrap-inspired structure, FontAwesome, Flatpickr  
+- **Backend:** Flask (Python), Jinja Templates
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Libraries & Tools:** Bootstrap-inspired structure, FontAwesome, Flatpickr
 
 ---
 
@@ -56,26 +77,23 @@ Cafe/
 
 ---
 
-## 📸 Showcase
-
-_(Screenshots and previews will be added here in the future)_
-
----
-
 ## ⚙️ Installation & Setup
 
 ### Clone repository
+
 ```bash
 git clone https://github.com/fockus26/cafe.git
 cd cafe
 ```
 
 ### Install dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
 ### Run project
+
 ```bash
 python main.py
 ```

@@ -89,25 +89,24 @@
 {% endblock %}
 
 {% block slide %}
-    <div id="slide-1" class="slide-item" style="background-image: url(/static/assets/images/header/1.jpg);">
+    <div id="slide-1" class="slide-item" style="background-image: url(/static/assets/images/header/1.webp);">
         <div class="slide-content">
             <h2 class="slide-title oswald">Coffee is <br> our language</h2>
             <p class="slide-text merriweather">Lorem ipsum dolor sit amet consectetur adipisicing eli</p>
-            <button class="slide-button open-sans">Read More</button  on>
+
         </div>
     </div>
-    <div id="slide-2" class="slide-item" style="background-image: url(/static/assets/images/header/2.jpg);">
+    <div id="slide-2" class="slide-item" style="background-image: url(/static/assets/images/header/2.webp);">
         <div class="slide-content">
             <h2 class="slide-title oswald">Henry</h2>
             <p class="slide-text merriweather">Lorem ipsum dolor sit amet consectetur adipisicing eli</p>
-            <button class="slide-button open-sans">Read More</button  on>
+
         </div>
     </div>
-    <div id="slide-3" class="slide-item" style="background-image: url(/static/assets/images/header/7.jpg);">
+    <div id="slide-3" class="slide-item" style="background-image: url(/static/assets/images/header/7.webp);">
         <div class="slide-content">
             <h2 class="slide-title oswald">Ricky</h2>
             <p class="slide-text merriweather">Lorem ipsum dolor sit amet consectetur adipisicing eli</p>
-            <button class="slide-button open-sans">Read More</button  on>
         </div>
     </div>
 {% endblock %}
@@ -128,7 +127,7 @@
     <h3 class="row oswald" style="font-size: 35px; text-align: center;">For more coffee!</h3>
     <div class="row divider line-divider"></div>
 
-    <form method="post" action="{{ url_for('home') }}" class="row" style="justify-content: space-between;" novalidate="True">
+    <form method="post" action="{{ url_for('home') }}" target="_blank" class="row" style="justify-content: space-between;" novalidate="True">
         <div class="div-reservation">
             <div class="form-seats">
                 {{ form.seats() }}
@@ -228,43 +227,43 @@
                             <h4 class="oswald" style="margin-bottom: 20px;">Croissant</h4>
                             <p class="open-sans-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident eos, qui cum</p>
                         </div>
-                        <img src="../static/assets/images/icons/1.png" alt="Croissant">
+                        <img src="../static/assets/icons/1.webp" alt="Croissant">
                     </div>
                     <div class="detail-widget-coffee">
                         <div>
                             <h4 class="oswald" style="margin-bottom: 20px;">French Toast</h4>
                             <p class="open-sans-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident eos, qui cum</p>
                         </div>
-                        <img src="../static/assets/images/icons/2.png" alt="French Toast">
+                        <img src="../static/assets/icons/2.webp" alt="French Toast">
                     </div>
                     <div class="detail-widget-coffee">
                         <div>
                             <h4 class="oswald" style="margin-bottom: 20px;">Pancakes</h4>
                             <p class="open-sans-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident eos, qui cum</p>
                         </div>
-                        <img src="../static/assets/images/icons/3.png" alt="Pancakes">
+                        <img src="../static/assets/icons/3.webp" alt="Pancakes">
                     </div>
                 </div>
 
-                <img src="../static/assets/images/coffee.png" class="img-widget-coffee" alt="Coffee">
+                <img src="../static/assets/images/coffee.webp" class="img-widget-coffee" alt="Coffee">
 
                 <div class="main-widget-coffee">
                     <div class="detail-widget-coffee" style="grid-template-columns: 50px 1fr; text-align: left;">
-                        <img src="../static/assets/images/icons/4.png" alt="Turkish Coffee">
+                        <img src="../static/assets/icons/4.webp" alt="Turkish Coffee">
                         <div>
                             <h4 class="oswald" style="margin-bottom: 20px;">Turkish Coffee</h4>
                             <p class="open-sans-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident eos, qui cum</p>
                         </div>
                     </div>
                     <div class="detail-widget-coffee" style="grid-template-columns: 50px 1fr; text-align: left;">
-                        <img src="../static/assets/images/icons/5.png" alt="Coffee To Go">
+                        <img src="../static/assets/icons/5.webp" alt="Coffee To Go">
                         <div>
                             <h4 class="oswald" style="margin-bottom: 20px;">Coffee To Go</h4>
                             <p class="open-sans-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident eos, qui cum</p>
                         </div>
                     </div>
                     <div class="detail-widget-coffee" style="grid-template-columns: 50px 1fr; text-align: left;">
-                        <img src="../static/assets/images/icons/6.png" alt="Morning Coffee">
+                        <img src="../static/assets/icons/6.webp" alt="Morning Coffee">
                         <div>
                             <h4 class="oswald" style="margin-bottom: 20px;">Morning Coffee</h4>
                             <p class="open-sans-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident eos, qui cum</p>
@@ -274,21 +273,21 @@
 
                 <div class="main-widget-coffee hidden">
                     <div class="detail-widget-coffee" style="grid-template-columns: 50px 1fr; text-align: left;">
-                        <img src="../static/assets/images/icons/1.png" alt="Croissant">
+                        <img src="../static/assets/icons/1.webp" alt="Croissant">
                         <div>
                             <h4 class="oswald" style="margin-bottom: 20px;">Croissant</h4>
                             <p class="open-sans-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident eos, qui cum</p>
                         </div>
                     </div>
                     <div class="detail-widget-coffee" style="grid-template-columns: 50px 1fr; text-align: left;">
-                        <img src="../static/assets/images/icons/2.png" alt="French Toast">
+                        <img src="../static/assets/icons/2.webp" alt="French Toast">
                         <div>
                             <h4 class="oswald" style="margin-bottom: 20px;">French Toast</h4>
                             <p class="open-sans-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident eos, qui cum</p>
                         </div>
                     </div>
                     <div class="detail-widget-coffee" style="grid-template-columns: 50px 1fr; text-align: left;">
-                        <img src="../static/assets/images/icons/3.png" alt="Pancakes">
+                        <img src="../static/assets/icons/3.webp" alt="Pancakes">
                         <div>
                             <h4 class="oswald" style="margin-bottom: 20px;">Pancakes</h4>
                             <p class="open-sans-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident eos, qui cum</p>
@@ -298,42 +297,42 @@
 
                 <div class="main-all-widget-coffee hidden">
                     <div class="detail-widget-coffee" style="grid-template-columns: 50px 1fr; text-align: left;">
-                        <img src="../static/assets/images/icons/4.png" alt="Turkish Coffee">
+                        <img src="../static/assets/icons/4.webp" alt="Turkish Coffee">
                         <div>
                             <h4 class="oswald" style="margin-bottom: 20px;">Turkish Coffee</h4>
                             <p class="open-sans-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident eos, qui cum</p>
                         </div>
                     </div>
                     <div class="detail-widget-coffee" style="grid-template-columns: 50px 1fr; text-align: left;">
-                        <img src="../static/assets/images/icons/5.png" alt="Coffee To Go">
+                        <img src="../static/assets/icons/5.webp" alt="Coffee To Go">
                         <div>
                             <h4 class="oswald" style="margin-bottom: 20px;">Coffee To Go</h4>
                             <p class="open-sans-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident eos, qui cum</p>
                         </div>
                     </div>
                     <div class="detail-widget-coffee" style="grid-template-columns: 50px 1fr; text-align: left;">
-                        <img src="../static/assets/images/icons/6.png" alt="Morning Coffee">
+                        <img src="../static/assets/icons/6.webp" alt="Morning Coffee">
                         <div>
                             <h4 class="oswald" style="margin-bottom: 20px;">Morning Coffee</h4>
                             <p class="open-sans-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident eos, qui cum</p>
                         </div>
                     </div>
                     <div class="detail-widget-coffee" style="grid-template-columns: 50px 1fr; text-align: left;">
-                        <img src="../static/assets/images/icons/1.png" alt="Croissant">
+                        <img src="../static/assets/icons/1.webp" alt="Croissant">
                         <div>
                             <h4 class="oswald" style="margin-bottom: 20px;">Croissant</h4>
                             <p class="open-sans-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident eos, qui cum</p>
                         </div>
                     </div>
                     <div class="detail-widget-coffee" style="grid-template-columns: 50px 1fr; text-align: left;">
-                        <img src="../static/assets/images/icons/2.png" alt="French Toast">
+                        <img src="../static/assets/icons/2.webp" alt="French Toast">
                         <div>
                             <h4 class="oswald" style="margin-bottom: 20px;">French Toast</h4>
                             <p class="open-sans-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident eos, qui cum</p>
                         </div>
                     </div>
                     <div class="detail-widget-coffee" style="grid-template-columns: 50px 1fr; text-align: left;">
-                        <img src="../static/assets/images/icons/3.png" alt="Pancakes">
+                        <img src="../static/assets/icons/3.webp" alt="Pancakes">
                         <div>
                             <h4 class="oswald" style="margin-bottom: 20px;">Pancakes</h4>
                             <p class="open-sans-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident eos, qui cum</p>
@@ -348,18 +347,17 @@
     </section>
 </div>
 
-
 <section class="scroll-container">
     <div class="scroll-content">
-        <img src="/static/assets/images/ig/1.jpg" alt="Ig">
-        <img src="/static/assets/images/ig/2.jpg" alt="Ig">
-        <img src="/static/assets/images/ig/3.jpg" alt="Ig">
-        <img src="/static/assets/images/ig/4.jpg" alt="Ig">
-        <img src="/static/assets/images/ig/5.jpg" alt="Ig">
-        <img src="/static/assets/images/ig/6.jpg" alt="Ig">
-        <img src="/static/assets/images/ig/7.jpg" alt="Ig">
-        <img src="/static/assets/images/ig/8.jpg" alt="Ig">
-        <img src="/static/assets/images/ig/9.jpg" alt="Ig">
+        <img src="/static/assets/images/ig/1.webp" alt="Ig">
+        <img src="/static/assets/images/ig/2.webp" alt="Ig">
+        <img src="/static/assets/images/ig/3.webp" alt="Ig">
+        <img src="/static/assets/images/ig/4.webp" alt="Ig">
+        <img src="/static/assets/images/ig/5.webp" alt="Ig">
+        <img src="/static/assets/images/ig/6.webp" alt="Ig">
+        <img src="/static/assets/images/ig/7.webp" alt="Ig">
+        <img src="/static/assets/images/ig/8.webp" alt="Ig">
+        <img src="/static/assets/images/ig/9.webp" alt="Ig">
     </div>
 </section>
 
@@ -373,43 +371,43 @@
 
         <div class="menu-container">
             <div class="item-menu">
-                <img src="/static/assets/images/menu/tiza/1.png" alt="Coffee Menu">
+                <img src="/static/assets/images/menu/tiza/1.webp" alt="Coffee Menu">
                 <h4 class="oswald">Espresso</h4>
                 <p class="open-sans-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti suscipit, in maxime</p>
             </div>
             <div class="item-menu">
-                <img src="/static/assets/images/menu/tiza/2.png" alt="Coffee Menu">
+                <img src="/static/assets/images/menu/tiza/2.webp" alt="Coffee Menu">
                 <h4 class="oswald">Macchiato</h4>
                 <p class="open-sans-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti suscipit, in maxime</p>
             </div>
             <div class="item-menu">
-                <img src="/static/assets/images/menu/tiza/3.png" alt="Coffee Menu">
+                <img src="/static/assets/images/menu/tiza/3.webp" alt="Coffee Menu">
                 <h4 class="oswald">Ristretto</h4>
                 <p class="open-sans-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti suscipit, in maxime</p>
             </div>
             <div class="item-menu">
-                <img src="/static/assets/images/menu/tiza/4.png" alt="Coffee Menu">
+                <img src="/static/assets/images/menu/tiza/4.webp" alt="Coffee Menu">
                 <h4 class="oswald">Capuccino</h4>
                 <p class="open-sans-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti suscipit, in maxime</p>
             </div>
 
             <div class="item-menu">
-                <img src="/static/assets/images/menu/tiza/5.png" alt="Coffee Menu">
+                <img src="/static/assets/images/menu/tiza/5.webp" alt="Coffee Menu">
                 <h4 class="oswald">Fappuchino</h4>
                 <p class="open-sans-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti suscipit, in maxime</p>
             </div>
             <div class="item-menu">
-                <img src="/static/assets/images/menu/tiza/6.png" alt="Coffee Menu">
+                <img src="/static/assets/images/menu/tiza/6.webp" alt="Coffee Menu">
                 <h4 class="oswald">Irish</h4>
                 <p class="open-sans-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti suscipit, in maxime</p>
             </div>
             <div class="item-menu">
-                <img src="/static/assets/images/menu/tiza/7.png" alt="Coffee Menu">
+                <img src="/static/assets/images/menu/tiza/7.webp" alt="Coffee Menu">
                 <h4 class="oswald">Mocha</h4>
                 <p class="open-sans-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti suscipit, in maxime</p>
             </div>
             <div class="item-menu">
-                <img src="/static/assets/images/menu/tiza/8.png" alt="Coffee Menu">
+                <img src="/static/assets/images/menu/tiza/8.webp" alt="Coffee Menu">
                 <h4 class="oswald">Glace</h4>
                 <p class="open-sans-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti suscipit, in maxime</p>
             </div>
@@ -420,7 +418,7 @@
 <div class="bg-img-coffee-to-go">
     <section class="container">
         <div class="row container-coffee-to-go">
-            <img class="img-coffee-to-go" src="/static/assets/images/coffee-enigma.png" alt="Coffee Enigma">
+            <img class="img-coffee-to-go" src="/static/assets/images/coffee-enigma.webp" alt="Coffee Enigma">
 
             <div class="coffee-to-go-content">
                 <div class="coffee-to-go-title">
@@ -429,7 +427,7 @@
                 </div>
 
                 <div class="coffee-to-go-item">
-                    <img src="/static/assets/images/icons/7-white.png" alt="Coffee Icon">
+                    <img src="/static/assets/icons/7.webp" alt="Coffee Icon">
                     <div>
                         <h4 class="oswald">Make it in Home</h4>
                         <p class="open-sans-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis at, magnam placeat impedit consectetur ex</p>
@@ -437,7 +435,7 @@
                 </div>
 
                 <div class="coffee-to-go-item">
-                    <img src="/static/assets/images/icons/8-white.png" alt="Coffee Icon">
+                    <img src="/static/assets/icons/8.webp" alt="Coffee Icon">
                     <div>
                         <h4 class="oswald">Super Cacao Flavors</h4>
                         <p class="open-sans-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis at, magnam placeat impedit consectetur ex</p>
@@ -445,7 +443,7 @@
                 </div>
 
                 <div class="coffee-to-go-item">
-                    <img src="/static/assets/images/icons/9-white.png" alt="Coffee Icon">
+                    <img src="/static/assets/icons/9.webp" alt="Coffee Icon">
                     <div>
                         <h4 class="oswald">It's a Secret <span>(discover it)</span></h4>
                         <p class="open-sans-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis at, magnam placeat impedit consectetur ex</p>

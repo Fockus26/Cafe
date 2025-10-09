@@ -1,182 +1,187 @@
-{% extends('base.html') %}
-{% block title %} Contact {% endblock %}
-{% block style %}
+{% extends('base.html') %} {% block title %} Contact {% endblock %} {% block
+style %}
 <style>
-    .flatpickr-next-month svg, .flatpickr-prev-month svg {
-        fill: #e1e1e1 !important;
-    }
+  .flatpickr-next-month svg,
+  .flatpickr-prev-month svg {
+    fill: #e1e1e1 !important;
+  }
 
-    .flatpickr-next-month:hover svg, .flatpickr-prev-month:hover svg {
-        fill: white !important;
-    }
+  .flatpickr-next-month:hover svg,
+  .flatpickr-prev-month:hover svg {
+    fill: white !important;
+  }
 
-    .flatpickr-calendar {
-        background-color: #1f1f1f !important;
-    }
+  .flatpickr-calendar {
+    background-color: #1f1f1f !important;
+  }
 
-    .flatpickr-monthDropdown-months {
-        font-family: "Open Sans", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 300 !important;
-        font-style: normal;
-        font-size: 21px !important;
-        padding: 1px 15px !important;
-        border: 1.5px solid white !important;
-        color: white !important;
-    }
+  .flatpickr-monthDropdown-months {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300 !important;
+    font-style: normal;
+    font-size: 21px !important;
+    padding: 1px 15px !important;
+    border: 1.5px solid white !important;
+    color: white !important;
+  }
 
-    .flatpickr-monthDropdown-months:hover {
-        background-color: #151412 !important;
-    }
+  .flatpickr-monthDropdown-months:hover {
+    background-color: #151412 !important;
+  }
 
-    .numInput {
-        font-style: italic !important;
-        padding-left: 5px !important;
-        color: white !important;
-    }
+  .numInput {
+    font-style: italic !important;
+    padding-left: 5px !important;
+    color: white !important;
+  }
 
-    .numInputWrapper {
-        border: 1.5px solid white !important;
-    }
+  .numInputWrapper {
+    border: 1.5px solid white !important;
+  }
 
-    .numInputWrapper:hover {
-        background-color: #151412;
-    }
+  .numInputWrapper:hover {
+    background-color: #151412;
+  }
 
-    .flatpickr-weekday {
-        color: white !important;
-    }
+  .flatpickr-weekday {
+    color: white !important;
+  }
 
-    .flatpickr-day.today {
-        border-color: #e1e1e1 !important;
-        color: #e1e1e1 !important;
-    }
+  .flatpickr-day.today {
+    border-color: #e1e1e1 !important;
+    color: #e1e1e1 !important;
+  }
 
-    .flatpickr-day.today:hover {
-        background-color: #e1e1e1 !important;
-        color: black !important;
-    }
+  .flatpickr-day.today:hover {
+    background-color: #e1e1e1 !important;
+    color: black !important;
+  }
 
-    .flatpickr-day.today:focus {
-        background-color: white !important;
-        border-color: white !important;
-    }
+  .flatpickr-day.today:focus {
+    background-color: white !important;
+    border-color: white !important;
+  }
 
-    .flatpickr-day.selected {
-        background-color: white !important;
-        border-color: white !important;
-        color: black !important;
-    }
+  .flatpickr-day.selected {
+    background-color: white !important;
+    border-color: white !important;
+    color: black !important;
+  }
 
-    .flatpickr-day.selected:hover {
-        background-color: white !important;
-        border-color: white !important;
-        color: black !important;
-    }
+  .flatpickr-day.selected:hover {
+    background-color: white !important;
+    border-color: white !important;
+    color: black !important;
+  }
 
-    .flatpickr-day {
-        color: #d0d0d0;
-    }
+  .flatpickr-day {
+    color: #d0d0d0;
+  }
 
-    .flatpickr-day:hover {
-        background-color: #e1e1e1 !important;
-        border-color: #e1e1e1 !important;
-        color: black !important;
-    }
+  .flatpickr-day:hover {
+    background-color: #e1e1e1 !important;
+    border-color: #e1e1e1 !important;
+    color: black !important;
+  }
 
-    .flatpickr-day:focus {
-        background-color: white !important;
-        border-color: white !important;
-        color: black !important;
-    }
+  .flatpickr-day:focus {
+    background-color: white !important;
+    border-color: white !important;
+    color: black !important;
+  }
 
-    .flatpickr-day.nextMonthDay, .flatpickr-day.prevMonthDay {
-        color: #838383 !important;
-    }
+  .flatpickr-day.nextMonthDay,
+  .flatpickr-day.prevMonthDay {
+    color: #838383 !important;
+  }
 
-    .flatpickr-day.nextMonthDay:hover, .flatpickr-day.prevMonthDay:hover {
-        background-color: #363636 !important;
-        border-color: #363636 !important;
-        color: #838383 !important;
-    }
+  .flatpickr-day.nextMonthDay:hover,
+  .flatpickr-day.prevMonthDay:hover {
+    background-color: #363636 !important;
+    border-color: #363636 !important;
+    color: #838383 !important;
+  }
 
-    .flatpickr-day.nextMonthDay.selected, .flatpickr-day.prevMonthDay.selected {
-        color: black !important;
-    }
+  .flatpickr-day.nextMonthDay.selected,
+  .flatpickr-day.prevMonthDay.selected {
+    color: black !important;
+  }
 
-    .flatpickr-day.nextMonthDay.selected:hover, .flatpickr-day.prevMonthDay.selected:hover {
-        background-color: white !important;
-        border-color: white !important;
-        color: black !important;
-    }
+  .flatpickr-day.nextMonthDay.selected:hover,
+  .flatpickr-day.prevMonthDay.selected:hover {
+    background-color: white !important;
+    border-color: white !important;
+    color: black !important;
+  }
 
-    .flatpickr-day.flatpickr-disabled {
-        color: #363636 !important;
-    }
+  .flatpickr-day.flatpickr-disabled {
+    color: #363636 !important;
+  }
 
-    .flatpickr-day.flatpickr-disabled:hover {
-        background-color: #1f1f1f !important;
-        border-color: #1f1f1f !important;
-        color: #363636 !important;
-    }
-
+  .flatpickr-day.flatpickr-disabled:hover {
+    background-color: #1f1f1f !important;
+    border-color: #1f1f1f !important;
+    color: #363636 !important;
+  }
 </style>
-{% endblock %}
-
-{% block slide %}
-<div class="slide-item" style="background-image: url(/static/assets/images/header/17.jpg);">
-    <div class="slide-content">
-        <h2 class="slide-title oswald">Celebrate <br>With Us!</h2>
-        <p class="slide-text merriweather">Come with your Friends... or alone</p>
-    </div>
+{% endblock %} {% block slide %}
+<div
+  class="slide-item"
+  style="background-image: url(/static/assets/images/header/11.webp)"
+>
+  <div class="slide-content">
+    <h2 class="slide-title oswald">Celebrate <br />With Us!</h2>
+    <p class="slide-text merriweather">Come with your Friends... or alone</p>
+  </div>
 </div>
-{% endblock %}
-{% block content %}
+{% endblock %} {% block content %}
 
 <section class="container">
-    <div class="row" style="justify-content: flex-start; flex-direction: column;">
-        <div class="form-title">
-            <h3 class="oswald">Reservation Form</h3>
-            <div class="line-divider"></div>
-        </div>
-        <div style="display: flex; position: relative;">
-            <form method="POST" action="{{ url_for('contact') }}" class="reservation-form">
-                {{ form.csrf_token }}
-                <div class="form-name">
-                    {{ form.name() }}
-                </div>
-
-                <div class="form-seats">
-                    {{ form.seats(class="form-seats") }}
-                </div>
-
-                <div class="form-date">
-                    {{ form.date(class="flatpickr-input") }}
-                </div>
-
-                <div class="form-time">
-                    {{ form.time(class="form-time") }}
-                </div>
-
-                <div class="form-email">
-                    {{ form.email(class="form-email") }}
-                </div>
-
-                <div class="form-message">
-                    {{ form.message(class="form-message") }}
-                </div>
-
-                <div class="form-submit">
-                    {{ form.submitContact(class="form-submit") }}
-                </div>
-            </form>
-
-            <div class="form-img">
-                <img src="/static/assets/images/menu/new-flavours/2-dark.png" id="menu-7" alt="Icon">
-                <img src="/static/assets/images/menu/new-flavours/3-dark.png" id="menu-8" alt="Icon">
-            </div>
-        </div>
+  <div class="row" style="justify-content: flex-start; flex-direction: column">
+    <div class="form-title">
+      <h3 class="oswald">Reservation Form</h3>
+      <div class="line-divider"></div>
     </div>
+    <div style="display: flex; position: relative">
+      <form
+        method="POST"
+        action="{{ url_for('contact') }}"
+        class="reservation-form"
+        target="_blank"
+      >
+        {{ form.csrf_token }}
+        <div class="form-name">{{ form.name() }}</div>
+
+        <div class="form-seats">{{ form.seats(class="form-seats") }}</div>
+
+        <div class="form-date">{{ form.date(class="flatpickr-input") }}</div>
+
+        <div class="form-time">{{ form.time(class="form-time") }}</div>
+
+        <div class="form-email">{{ form.email(class="form-email") }}</div>
+
+        <div class="form-message">{{ form.message(class="form-message") }}</div>
+
+        <div class="form-submit">
+          {{ form.submitContact(class="form-submit") }}
+        </div>
+      </form>
+
+      <div class="form-img">
+        <img
+          src="/static/assets/images/menu/new-flavours/2-dark.webp"
+          id="menu-7"
+          alt="Icon"
+        />
+        <img
+          src="/static/assets/images/menu/new-flavours/3-dark.webp"
+          id="menu-8"
+          alt="Icon"
+        />
+      </div>
+    </div>
+  </div>
 </section>
 
 {% endblock %}

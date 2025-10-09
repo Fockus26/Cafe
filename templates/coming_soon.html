@@ -1,83 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enigma Cafe</title>
-    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='/assets/images/favicon.ico') }}" sizes="32x32">
-    <link rel="stylesheet" href="{{ url_for('static', filename='/styles.css') }}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{{ url_for('static', filename='/assets/icons/favicon.ico') }}"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='/styles.css') }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <section class="slide">
-            <div class="slides">
-                <div class="slide-item slide-coming-soon" style="background-image: url(/static/assets/images/header/20.jpg); text-align: center;">
-                    <img src="/static/assets/images/logo-dark.png" alt="Logo Enigma">
-                    <div>
-                        <h1 class="slide-title oswald">Opening Soon!</h1>
-                        <p class="slide-text merriweather">Meet The Enigma</p>
-                        <div class="divider line-divider"></div>
-                    </div>
-                    <div class="coming-soon">
-                        <div class="coming-soon-items">
-                            <div>
-                                <span class="oswald" id="months">0</span>
-                                <p class="merriweather">Months</p>
-                            </div>
-                            <div>
-                                <span class="oswald" id="days">0</span>
-                                <p class="merriweather">Days</p>
-                            </div>
-                            <div>
-                                <span class="oswald" id="hours">0</span>
-                                <p class="merriweather">Hours</p>
-                            </div>
-                            <div>
-                                <span class="oswald" id="minutes">0</span>
-                                <p class="merriweather">Minutes</p>
-                            </div>
-                            <div>
-                                <span class="oswald" id="seconds">0</span>
-                                <p class="merriweather">Seconds</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <section class="slide">
+        <div class="slides">
+          <div
+            class="slide-item slide-coming-soon"
+            style="
+              background-image: url(/static/assets/images/header/12.webp);
+              text-align: center;
+            "
+          >
+            <img src="/static/assets/images/logo-dark.webp" alt="Logo Enigma" />
+            <div>
+              <h1 class="slide-title oswald">Opening Soon!</h1>
+              <p class="slide-text merriweather">Meet The Enigma</p>
+              <div class="divider line-divider"></div>
             </div>
-        </section>
+            <div class="coming-soon">
+              <div class="coming-soon-items">
+                <div>
+                  <span class="oswald" id="months">0</span>
+                  <p class="merriweather">Months</p>
+                </div>
+                <div>
+                  <span class="oswald" id="days">0</span>
+                  <p class="merriweather">Days</p>
+                </div>
+                <div>
+                  <span class="oswald" id="hours">0</span>
+                  <p class="merriweather">Hours</p>
+                </div>
+                <div>
+                  <span class="oswald" id="minutes">0</span>
+                  <p class="merriweather">Minutes</p>
+                </div>
+                <div>
+                  <span class="oswald" id="seconds">0</span>
+                  <p class="merriweather">Seconds</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
 
     <script>
-        var countdownDate = new Date("May 29, 2024 00:00:00").getTime();
-        var x = setInterval(function() {
-            var now = new Date().getTime();
-            var distance = countdownDate - now;
+      var countdownDate = new Date("May 29, 2024 00:00:00").getTime();
+      var x = setInterval(function () {
+        var now = new Date().getTime();
+        var distance = countdownDate - now;
 
-            var months = Math.floor(distance / (1000 * 60 * 60 * 24 * 30));
-            var days = Math.floor((distance % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        var months = Math.floor(distance / (1000 * 60 * 60 * 24 * 30));
+        var days = Math.floor(
+          (distance % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24)
+        );
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            document.getElementById("months").innerHTML = months;
-            document.getElementById("days").innerHTML = days;
-            document.getElementById("hours").innerHTML = hours;
-            document.getElementById("minutes").innerHTML = minutes;
-            document.getElementById("seconds").innerHTML = seconds;
+        document.getElementById("months").innerHTML = months;
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
 
-            if (distance < 0) {
-                clearInterval(x);
+        if (distance < 0) {
+          clearInterval(x);
 
-                document.getElementById("months").innerHTML = "00";
-                document.getElementById("days").innerHTML = "00";
-                document.getElementById("hours").innerHTML = "00";
-                document.getElementById("minutes").innerHTML = "00";
-                document.getElementById("seconds").innerHTML = "00";
-            }
-        }, 1000);
+          document.getElementById("months").innerHTML = "00";
+          document.getElementById("days").innerHTML = "00";
+          document.getElementById("hours").innerHTML = "00";
+          document.getElementById("minutes").innerHTML = "00";
+          document.getElementById("seconds").innerHTML = "00";
+        }
+      }, 1000);
     </script>
-</body>
+  </body>
 </html>

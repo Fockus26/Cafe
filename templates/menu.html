@@ -1,598 +1,676 @@
-{% extends('base.html') %}
-{% block title %} Menu {% endblock %}
-{% block style %}
+{% extends('base.html') %} {% block title %} Menu {% endblock %} {% block style
+%}
 <style>
-    body {
-        background-color: black;
-    }
+  body {
+    background-color: black;
+  }
 </style>
-{% endblock %}
-{% block slide %}
-<div class="slide-item" style="background-image: url(/static/assets/images/header/12.jpg);">
-    <div class="slide-content">
-        <h2 class="slide-title oswald">You Must Taste <br>Our Menu</h2>
-        <p class="slide-text merriweather">For some reason MOA is closed</p>
-    </div>
+{% endblock %} {% block slide %}
+<div
+  class="slide-item"
+  style="background-image: url(/static/assets/images/header/10.webp)"
+>
+  <div class="slide-content">
+    <h2 class="slide-title oswald">You Must Taste <br />Our Menu</h2>
+    <p class="slide-text merriweather">For some reason MOA is closed</p>
+  </div>
 </div>
-{% endblock %}
+{% endblock %} {% block content %}
+<section class="container-main-menu" style="background-color: white">
+  <div class="new-flavours-img-left">
+    <img
+      src="/static/assets/images/menu/new-flavours/1.webp"
+      id="menu-1"
+      alt="Menu Icon"
+      style="z-index: 3"
+    />
+    <img
+      src="/static/assets/images/menu/new-flavours/2.webp"
+      id="menu-2"
+      alt="Menu Icon"
+      style="z-index: 2"
+    />
+    <img
+      src="/static/assets/images/menu/new-flavours/3.webp"
+      id="menu-3"
+      alt="Menu Icon"
+    />
+    <img
+      src="/static/assets/images/menu/new-flavours/4.webp"
+      id="menu-4"
+      alt="Menu Icon"
+    />
+  </div>
 
-{% block content %}
-<section class="container-main-menu" style="background-color: white;">
-    <div class="new-flavours-img-left">
-        <img src="/static/assets/images/menu/new-flavours/1.png" id="menu-1" alt="Menu Icon" style="z-index: 3;">
-        <img src="/static/assets/images/menu/new-flavours/2.png" id="menu-2" alt="Menu Icon" style="z-index: 2;">
-        <img src="/static/assets/images/menu/new-flavours/3.png" id="menu-3" alt="Menu Icon">
-        <img src="/static/assets/images/menu/new-flavours/4.png" id="menu-4" alt="Menu Icon">
+  <div class="new-flavours-content">
+    <div class="new-flavours-title">
+      <h3 class="oswald">Taste New Flavours</h3>
+      <div class="divider line-divider"></div>
     </div>
 
-    <div class="new-flavours-content">
-        <div class="new-flavours-title">
-            <h3 class="oswald">Taste New Flavours</h3>
-            <div class="divider line-divider"></div>
+    <div
+      class="row"
+      style="justify-content: space-between; flex-direction: column"
+    >
+      <div class="new-flavours-item">
+        <div>
+          <h4 class="oswald">Coffee Latte</h4>
+          <div class="line-between"></div>
+          <p class="oswald">$2.95</p>
         </div>
-
-        <div class="row" style="justify-content: space-between; flex-direction: column;">
-            <div class="new-flavours-item">
-                <div>
-                    <h4 class="oswald">Coffee Latte</h4>
-                    <div class="line-between"></div>
-                    <p class="oswald">$2.95</p>
-                </div>
-                <div>
-                    <p class="open-sans">Made with a lot of love and milk</p>
-                    <span>New</span>
-                </div>
-            </div>
-            <div class="new-flavours-item">
-                <div>
-                    <h4 class="oswald">Coffee Mocha</h4>
-                    <div class="line-between"></div>
-                    <p class="oswald">$3.45</p>
-                </div>
-                <div>
-                    <p class="open-sans">Chocolate and Coffee. What more you can ask?</p>
-                </div>
-            </div>
-            <div class="new-flavours-item">
-                <div>
-                    <h4 class="oswald">White Chocolate Mocha</h4>
-                    <div class="line-between"></div>
-                    <p class="oswald">$3.45</p>
-                </div>
-                <div>
-                    <p class="open-sans">Like a Mocha but racist</p>
-                </div>
-            </div>
-            <div class="new-flavours-item">
-                <div>
-                    <h4 class="oswald">Coffee Americano</h4>
-                    <div class="line-between"></div>
-                    <p class="oswald">$1.5</p>
-                </div>
-                <div>
-                    <p class="open-sans">His flavour is very lame</p>
-                </div>
-            </div>
-            <div class="new-flavours-item">
-                <div>
-                    <h4 class="oswald">Coffee Cappuccino</h4>
-                    <div class="line-between"></div>
-                    <p class="oswald">$2.95</p>
-                </div>
-                <div>
-                    <p class="open-sans">Ufff i want one of those</p>
-                </div>
-            </div>
-            <div class="new-flavours-item">
-                <div>
-                    <h4 class="oswald">Vanilla Latte</h4>
-                    <div class="line-between"></div>
-                    <p class="oswald">$3.15</p>
-                </div>
-                <div>
-                    <p class="open-sans">Coffee for Women</p>
-                </div>
-            </div>
+        <div>
+          <p class="open-sans">Made with a lot of love and milk</p>
+          <span>New</span>
         </div>
+      </div>
+      <div class="new-flavours-item">
+        <div>
+          <h4 class="oswald">Coffee Mocha</h4>
+          <div class="line-between"></div>
+          <p class="oswald">$3.45</p>
+        </div>
+        <div>
+          <p class="open-sans">Chocolate and Coffee. What more you can ask?</p>
+        </div>
+      </div>
+      <div class="new-flavours-item">
+        <div>
+          <h4 class="oswald">White Chocolate Mocha</h4>
+          <div class="line-between"></div>
+          <p class="oswald">$3.45</p>
+        </div>
+        <div>
+          <p class="open-sans">Like a Mocha but racist</p>
+        </div>
+      </div>
+      <div class="new-flavours-item">
+        <div>
+          <h4 class="oswald">Coffee Americano</h4>
+          <div class="line-between"></div>
+          <p class="oswald">$1.5</p>
+        </div>
+        <div>
+          <p class="open-sans">His flavour is very lame</p>
+        </div>
+      </div>
+      <div class="new-flavours-item">
+        <div>
+          <h4 class="oswald">Coffee Cappuccino</h4>
+          <div class="line-between"></div>
+          <p class="oswald">$2.95</p>
+        </div>
+        <div>
+          <p class="open-sans">Ufff i want one of those</p>
+        </div>
+      </div>
+      <div class="new-flavours-item">
+        <div>
+          <h4 class="oswald">Vanilla Latte</h4>
+          <div class="line-between"></div>
+          <p class="oswald">$3.15</p>
+        </div>
+        <div>
+          <p class="open-sans">Coffee for Women</p>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <div class="new-flavours-img-right">
-        <img src="/static/assets/images/menu/new-flavours/5.png" id="menu-5" alt="Menu Icon">
-        <img src="/static/assets/images/menu/new-flavours/6.png" id="menu-6" alt="Menu Icon">
-    </div>
+  <div class="new-flavours-img-right">
+    <img
+      src="/static/assets/images/menu/new-flavours/5.webp"
+      id="menu-5"
+      alt="Menu Icon"
+    />
+    <img
+      src="/static/assets/images/menu/new-flavours/6.webp"
+      id="menu-6"
+      alt="Menu Icon"
+    />
+  </div>
 </section>
 
 <section class="menu-main-container">
-    <div class="first-menu">
-        <div class="menu-header">
-            <div class="header-a">
-                <img src="/static/assets/images/logo-short-light.png" alt="Logo Light">
-                <h3 class="oswald">Menu</h3>
-            </div>
-            <div class="header-b">
-                <p class="merriweather" style="text-align: center;">Desafia tus sentidos</p>
-            </div>
-        </div>
-        <div class="menu-content">
-            <div class="hot-drinks menu-div menu-title">
-                <h3 class="oswald">Hot Drinks</h3>
-                <div>
-                    <div class="menu-item">
-                        <div>
-                        </div>
-                        <div class="menu-price">
-                            <h4 class="oswald">p</h4>
-                            <h4 class="oswald">g</h4>
-                        </div>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 0px;">
-                        <h4 class="oswald">Coffee Latte</h4>
-                        <div class="line-between"></div>
-                        <div>
-                            <span class="oswald">$1.50</span>
-                            <span class="oswald">$2.50</span>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <p class="open-sans-light" style="font-style: italic;">The best latte for Cesar</p>
-                    </div>
-                    <div class="menu-item">
-                        <h4 class="oswald">Capuccino</h4>
-                        <div class="line-between"></div>
-                        <div>
-                            <span class="oswald">$1.50</span>
-                            <span class="oswald">$2.50</span>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <h4 class="oswald">Mocaccino</h4>
-                        <div class="line-between"></div>
-                        <div>
-                            <span class="oswald">$2.00</span>
-                            <span class="oswald">$3.00</span>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <h4 class="oswald" id="enigma-rose">Enigma Rose</h4>
-                        <div class="line-between"></div>
-                        <div>
-                            <span class="oswald">$2.50</span>
-                            <span class="oswald">$3.50</span>
-                        </div>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 0px;">
-                        <h4 class="oswald">Chocolate</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$3.00</span>
-                    </div>
-                    <div class="menu-item">
-                        <p class="open-sans-light" style="font-style: italic;">Que rico con estas lluvias</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="frappuccinos menu-div menu-title">
-                <h3 class="oswald">Frappuccinos</h3>
-                <div>
-                    <div class="menu-item">
-                        <h4 class="oswald">Frappuccino Clasico</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$2.50</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 0;">
-                        <h4 class="oswald">Frappuccino Especial</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$3.50</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 17px;">
-                        <p class="open-sans-light" style="font-style: italic;">Esta rico, pero no tan bueno como yo</p>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 0;">
-                        <h4 class="oswald">Frappuccino Griego</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$4.00</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 17px;">
-                        <p class="open-sans-light" style="font-style: italic;">CUIDADO NO COMPRAR 🤢</p>
-                    </div>
-                    <div class="menu-item">
-                        <h4 class="oswald">Frappuccino Almendrado</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$4.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-title espressos menu-div">
-                <h3 class="oswald shadow-text-invert">Espressos</h3>
-                <div class="content-espressos">
-                    <div>
-                        <div class="menu-item">
-                            <h4 class="oswald">Espresso</h4>
-                            <div class="line-between"></div>
-                            <span class="oswald">$1.00</span>
-                        </div>
-                        <div class="menu-item">
-                            <h4 class="oswald">Espresso Cubano</h4>
-                            <div class="line-between"></div>
-                            <span class="oswald">$1.00</span>
-                        </div>
-                        <div class="menu-item">
-                            <h4 class="oswald">Americano</h4>
-                            <div class="line-between"></div>
-                            <span class="oswald">$1.00</span>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="menu-item">
-                            <h4 class="oswald">Americano Andino</h4>
-                            <div class="line-between"></div>
-                            <span class="oswald">$1.50</span>
-                        </div>
-                        <div class="menu-item">
-                            <h4 class="oswald">Macchiato</h4>
-                            <div class="line-between"></div>
-                            <span class="oswald">$1.50</span>
-                        </div>
-                        <div class="menu-item">
-                            <h4 class="oswald">Cafe Bombon</h4>
-                            <div class="line-between"></div>
-                            <span class="oswald">$1.50</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cold-coffee menu-title">
-                <div class="menu-title header-c menu-div">
-                    <h3 class="shadow-text-invert oswald">Cold Coffee</h3>
-                </div>
-                <div class="menu-title coffee-cold menu-div">
-                    <div>
-                        <div class="menu-item" style="margin-top: 10px;">
-                            <h4 class="oswald">Ice Latte</h4>
-                            <div class="line-between"></div>
-                            <span class="oswald">$2.50</span>
-                        </div>
-                        <div class="menu-item" style="margin-bottom: 0px;">
-                            <h4 class="oswald">Ice Latte Especial</h4>
-                            <div class="line-between"></div>
-                            <span class="oswald">$3.00</span>
-                        </div>
-                        <div class="menu-item" style="margin-bottom: 10px;">
-                            <p class="open-sans-light" style="font-style: italic;">Caramelo y Chocolate</p>
-                        </div>
-                        <div class="menu-item">
-                            <h4 class="oswald">Ice Americano</h4>
-                            <div class="line-between"></div>
-                            <span class="oswald">$1.50</span>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="menu-item" style="margin-top: 10px;">
-                            <h4 class="oswald">Affogato</h4>
-                            <div class="line-between"></div>
-                            <span class="oswald">$3.50</span>
-                        </div>
-                        <div class="menu-item">
-                            <h4 class="oswald" style="margin-top: 14px;">Orange Coffee</h4>
-                            <div class="line-between"></div>
-                            <span class="oswald">$2.50</span>
-                        </div>
-                        <div class="menu-item">
-                            <h4 class="oswald" style="margin-top: 14px;">Ice Coffee Coke</h4>
-                            <div class="line-between"></div>
-                            <span class="oswald">$2.50</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-title cold-coffee-mobile menu-div">
-                <h3 class="shadow-text-invert oswald">Cold Coffee</h3>
-                <div class="content-cold-coffee-mobile">
-                    <div>
-                        <div class="menu-item" style="margin-top: 10px;">
-                            <h4 class="oswald">Ice Latte</h4>
-                            <div class="line-between"></div>
-                            <span class="oswald">$2.50</span>
-                        </div>
-                        <div class="menu-item" style="margin-bottom: 0px;">
-                            <h4 class="oswald">Ice Latte Especial</h4>
-                            <div class="line-between"></div>
-                            <span class="oswald">$3.00</span>
-                        </div>
-                        <div class="menu-item" style="margin-bottom: 10px;">
-                            <p class="open-sans-light" style="font-style: italic;">Caramelo y Chocolate</p>
-                        </div>
-                        <div class="menu-item">
-                            <h4 class="oswald">Ice Americano</h4>
-                            <div class="line-between"></div>
-                            <span class="oswald">$1.50</span>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="menu-item">
-                            <h4 class="oswald">Affogato</h4>
-                            <div class="line-between"></div>
-                            <span class="oswald">$3.50</span>
-                        </div>
-                        <div class="menu-item">
-                            <h4 class="oswald">Orange Coffee</h4>
-                            <div class="line-between"></div>
-                            <span class="oswald">$2.50</span>
-                        </div>
-                        <div class="menu-item">
-                            <h4 class="oswald">Ice Coffee Coke</h4>
-                            <div class="line-between"></div>
-                            <span class="oswald">$2.50</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="additional-drinks">
-                <div class="menu-title te menu-div">
-                    <h3 class="oswald">Te</h3>
-                    <div>
-                        <div class="menu-item">
-                            <h4 class="oswald">Infusion Frutal</h4>
-                            <div class="line-between"></div>
-                            <span class="oswald">$1.50</span>
-                        </div>
-                        <div class="menu-item">
-                            <h4 class="oswald" id="matcha">Te Matcha</h4>
-                            <div class="line-between"></div>
-                            <span class="oswald">$1.50</span>
-                        </div>
-                        <div class="menu-item">
-                            <h4 class="oswald">Matcha Latte</h4>
-                            <div class="line-between"></div>
-                            <span class="oswald">$2.00</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu-title extras menu-div" style="padding-bottom: 20px;">
-                    <h3 class="oswald">Extras</h3>
-                    <div>
-                        <div class="menu-item">
-                            <h4 class="oswald">Chantilly</h4>
-                            <div class="line-between" style="border-color: black;"></div>
-                            <span class="oswald">$0.50</span>
-                        </div>
-                        <div class="menu-item">
-                            <h4 class="oswald additional-drink">Leche de Almendras / Avena</h4>
-                            <h4 class="oswald additional-drink2">Leche de Almendras <br>o Avena</h4>
-                            <div class="line-between" style="border-color: black;"></div>
-                            <span class="oswald">$1.00</span>
-                        </div>
-                        <div class="menu-item">
-                            <h4 class="oswald additional-drink">Chocolate <br> Condensada / Arequipe</h4>
-                            <h4 class="oswald additional-drink2">Chocolate <br> Condensada <br> Arequipe</h4>
-                            <div class="line-between" style="border-color: black;"></div>
-                            <span class="oswald">$0.50</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="first-menu">
+    <div class="menu-header">
+      <div class="header-a">
+        <img
+          src="/static/assets/images/logo-short-light.webp"
+          alt="Logo Light"
+        />
+        <h3 class="oswald">Menu</h3>
+      </div>
+      <div class="header-b">
+        <p class="merriweather" style="text-align: center">
+          Desafia tus sentidos
+        </p>
+      </div>
     </div>
-
-    <div class="second-menu">
-        <div class="menu-header">
-            <div class="header-a">
-                <img src="/static/assets/images/logo-short-light.png" alt="Logo Light">
-                <h3 class="oswald">Menu</h3>
+    <div class="menu-content">
+      <div class="hot-drinks menu-div menu-title">
+        <h3 class="oswald">Hot Drinks</h3>
+        <div>
+          <div class="menu-item">
+            <div></div>
+            <div class="menu-price">
+              <h4 class="oswald">p</h4>
+              <h4 class="oswald">g</h4>
             </div>
-            <div class="header-b">
-                <p class="merriweather" style="text-align: center;">Subimos los Precios >3</p>
+          </div>
+          <div class="menu-item" style="margin-bottom: 0px">
+            <h4 class="oswald">Coffee Latte</h4>
+            <div class="line-between"></div>
+            <div>
+              <span class="oswald">$1.50</span>
+              <span class="oswald">$2.50</span>
             </div>
+          </div>
+          <div class="menu-item">
+            <p class="open-sans-light" style="font-style: italic">
+              The best latte for Cesar
+            </p>
+          </div>
+          <div class="menu-item">
+            <h4 class="oswald">Capuccino</h4>
+            <div class="line-between"></div>
+            <div>
+              <span class="oswald">$1.50</span>
+              <span class="oswald">$2.50</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <h4 class="oswald">Mocaccino</h4>
+            <div class="line-between"></div>
+            <div>
+              <span class="oswald">$2.00</span>
+              <span class="oswald">$3.00</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <h4 class="oswald" id="enigma-rose">Enigma Rose</h4>
+            <div class="line-between"></div>
+            <div>
+              <span class="oswald">$2.50</span>
+              <span class="oswald">$3.50</span>
+            </div>
+          </div>
+          <div class="menu-item" style="margin-bottom: 0px">
+            <h4 class="oswald">Chocolate</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$3.00</span>
+          </div>
+          <div class="menu-item">
+            <p class="open-sans-light" style="font-style: italic">
+              Que rico con estas lluvias
+            </p>
+          </div>
         </div>
-        <div class="menu-content2">
-            <div class="menu-title menu-div desserts">
-                <h3 class="oswald shadow-text-invert">Desserts</h3>
-                <div>
-                    <div class="menu-item" style="margin-bottom: 25px;">
-                        <h4 class="oswald">Torta Red Velvet</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$3.50</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 25px;">
-                        <h4 class="oswald">Torta de Zanahoria</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$3.50</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 25px;">
-                        <h4 class="oswald">Torta de Chocolate</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$3.50</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 25px;">
-                        <h4 class="oswald">Marquesa de Chocolate</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$3.50</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 25px;">
-                        <h4 class="oswald">Brownie</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$2.50</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 25px;">
-                        <h4 class="oswald">Brownie con Helado</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$4.00</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 25px;">
-                        <h4 class="oswald">Waffle Clasico</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$2.00</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 25px;">
-                        <h4 class="oswald">Waffle con Helado</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$4.00</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 25px;">
-                        <h4 class="oswald">Waffle con Frutas</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$4.00</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 25px;">
-                        <h4 class="oswald">Fresas con Crema</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$3.50</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 25px;">
-                        <h4 class="oswald">Parfait</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$4.00</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 25px;">
-                        <h4 class="oswald">Copa de Helado</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$3.00</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 25px;">
-                        <h4 class="oswald">Galletas con Helado</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$3.50</span>
-                    </div>
-                    <div class="menu-item">
-                        <h4 class="oswald">Galletas de la Casa</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$1.00/$1.50</span>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-title menu-div milkshakes">
-                <h3 class="oswald">Milkshakes</h3>
-                <div>
-                    <div class="menu-item" style="margin-bottom: 16.5px;">
-                        <h4 class="oswald">Merengada <span id="choco-enigma">Choco-Enigma</span></h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$5.00</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 16.5px;">
-                        <h4 class="oswald">Merengada de Cambur</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$5.00</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 16.5px;">
-                        <h4 class="oswald">Merengada de Fresa</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$4.50</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 16.5px;">
-                        <h4 class="oswald">Merengada de Cocosette</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$4.50</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 16.5px;">
-                        <h4 class="oswald">Merengada de Oreo</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$4.50</span>
-                    </div>
-                    <div class="menu-item">
-                        <h4 class="oswald">Merengada de Arequipe</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$4.50</span>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-title menu-div snacks">
-                <h3 class="oswald">Snacks</h3>
-                <div>
-                    <div class="menu-item" style="margin-bottom: 0px;">
-                        <h4 class="oswald">Panini</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$4.00</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 10px;">
-                        <p class="open-sans-light" style="font-style: italic;">Clasico, Capressa o Atun... Como en Subway!!!</p>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 0px;">
-                        <h4 class="oswald">Tequeños</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$3.50</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 10px;">
-                        <p class="open-sans-light" style="font-style: italic;">Nada mas 5 tequeñitos</p>
-                    </div>
-                    <div class="menu-item">
-                        <h4 class="oswald">Waffle Salado</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$3.50</span>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-title menu-div drinks">
-                <h3 class="oswald shadow-text-invert">Drinks</h3>
-                <div>
-                    <div class="menu-item">
-                        <h4 class="oswald">Limonada Clasica</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$2.00</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 0px;">
-                        <h4 class="oswald">Limonada Especial</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$2.50</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 10px;">
-                        <p class="open-sans-light" style="font-style: italic;">Hierba o Cafe</p>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 0px;">
-                        <h4 class="oswald">Frappe</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$2.50</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 10px;">
-                        <p class="open-sans-light" style="font-style: italic;">Frutos Rojos / Amarillos / Verdes</p>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 0px;">
-                        <h4 class="oswald">Soda Siciliana</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$3.00</span>
-                    </div>
-                    <div class="menu-item" style="margin-bottom: 10px;">
-                        <p class="open-sans-light" style="font-style: italic;">Frutos Rojos / Amarillos / Verdes</p>
-                    </div>
-                    <div class="menu-item">
-                        <h4 class="oswald">Te Helado</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$1.50</span>
-                    </div>
-                    <div class="menu-item">
-                        <h4 class="oswald">Coca-Cola / Zero</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$1.50</span>
-                    </div>
-                    <div class="menu-item">
-                        <h4 class="oswald">Agua Embotellada</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$1.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="menu-title menu-div take-the-enigma">
-                <h3 class="oswald" style="margin-bottom: 0px; text-align: center;">Take The Enigma</h3>
-                <span class="merriweather">Molido!</span>
-                <div>
-                    <div class="menu-item">
-                        <h4 class="oswald">200Gr</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$2.50</span>
-                    </div>
-                    <div class="menu-item">
-                        <h4 class="oswald">500Gr</h4>
-                        <div class="line-between"></div>
-                        <span class="oswald">$5.00</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+      </div>
 
-    <div class="arrows-menu" style="max-width: 1160px; margin: 0 auto;">
-        <button class="left-arrow-menu arrow-dashed"><i class="fa-solid fa-arrow-left fa-2x"></i></button>
-        <button class="right-arrow-menu"><i class="fa-solid fa-arrow-right fa-2x"></i></button>
+      <div class="frappuccinos menu-div menu-title">
+        <h3 class="oswald">Frappuccinos</h3>
+        <div>
+          <div class="menu-item">
+            <h4 class="oswald">Frappuccino Clasico</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$2.50</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 0">
+            <h4 class="oswald">Frappuccino Especial</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$3.50</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 17px">
+            <p class="open-sans-light" style="font-style: italic">
+              Esta rico, pero no tan bueno como yo
+            </p>
+          </div>
+          <div class="menu-item" style="margin-bottom: 0">
+            <h4 class="oswald">Frappuccino Griego</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$4.00</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 17px">
+            <p class="open-sans-light" style="font-style: italic">
+              CUIDADO NO COMPRAR 🤢
+            </p>
+          </div>
+          <div class="menu-item">
+            <h4 class="oswald">Frappuccino Almendrado</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$4.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-title espressos menu-div">
+        <h3 class="oswald shadow-text-invert">Espressos</h3>
+        <div class="content-espressos">
+          <div>
+            <div class="menu-item">
+              <h4 class="oswald">Espresso</h4>
+              <div class="line-between"></div>
+              <span class="oswald">$1.00</span>
+            </div>
+            <div class="menu-item">
+              <h4 class="oswald">Espresso Cubano</h4>
+              <div class="line-between"></div>
+              <span class="oswald">$1.00</span>
+            </div>
+            <div class="menu-item">
+              <h4 class="oswald">Americano</h4>
+              <div class="line-between"></div>
+              <span class="oswald">$1.00</span>
+            </div>
+          </div>
+          <div>
+            <div class="menu-item">
+              <h4 class="oswald">Americano Andino</h4>
+              <div class="line-between"></div>
+              <span class="oswald">$1.50</span>
+            </div>
+            <div class="menu-item">
+              <h4 class="oswald">Macchiato</h4>
+              <div class="line-between"></div>
+              <span class="oswald">$1.50</span>
+            </div>
+            <div class="menu-item">
+              <h4 class="oswald">Cafe Bombon</h4>
+              <div class="line-between"></div>
+              <span class="oswald">$1.50</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cold-coffee menu-title">
+        <div class="menu-title header-c menu-div">
+          <h3 class="shadow-text-invert oswald">Cold Coffee</h3>
+        </div>
+        <div class="menu-title coffee-cold menu-div">
+          <div>
+            <div class="menu-item" style="margin-top: 10px">
+              <h4 class="oswald">Ice Latte</h4>
+              <div class="line-between"></div>
+              <span class="oswald">$2.50</span>
+            </div>
+            <div class="menu-item" style="margin-bottom: 0px">
+              <h4 class="oswald">Ice Latte Especial</h4>
+              <div class="line-between"></div>
+              <span class="oswald">$3.00</span>
+            </div>
+            <div class="menu-item" style="margin-bottom: 10px">
+              <p class="open-sans-light" style="font-style: italic">
+                Caramelo y Chocolate
+              </p>
+            </div>
+            <div class="menu-item">
+              <h4 class="oswald">Ice Americano</h4>
+              <div class="line-between"></div>
+              <span class="oswald">$1.50</span>
+            </div>
+          </div>
+          <div>
+            <div class="menu-item" style="margin-top: 10px">
+              <h4 class="oswald">Affogato</h4>
+              <div class="line-between"></div>
+              <span class="oswald">$3.50</span>
+            </div>
+            <div class="menu-item">
+              <h4 class="oswald" style="margin-top: 14px">Orange Coffee</h4>
+              <div class="line-between"></div>
+              <span class="oswald">$2.50</span>
+            </div>
+            <div class="menu-item">
+              <h4 class="oswald" style="margin-top: 14px">Ice Coffee Coke</h4>
+              <div class="line-between"></div>
+              <span class="oswald">$2.50</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-title cold-coffee-mobile menu-div">
+        <h3 class="shadow-text-invert oswald">Cold Coffee</h3>
+        <div class="content-cold-coffee-mobile">
+          <div>
+            <div class="menu-item" style="margin-top: 10px">
+              <h4 class="oswald">Ice Latte</h4>
+              <div class="line-between"></div>
+              <span class="oswald">$2.50</span>
+            </div>
+            <div class="menu-item" style="margin-bottom: 0px">
+              <h4 class="oswald">Ice Latte Especial</h4>
+              <div class="line-between"></div>
+              <span class="oswald">$3.00</span>
+            </div>
+            <div class="menu-item" style="margin-bottom: 10px">
+              <p class="open-sans-light" style="font-style: italic">
+                Caramelo y Chocolate
+              </p>
+            </div>
+            <div class="menu-item">
+              <h4 class="oswald">Ice Americano</h4>
+              <div class="line-between"></div>
+              <span class="oswald">$1.50</span>
+            </div>
+          </div>
+          <div>
+            <div class="menu-item">
+              <h4 class="oswald">Affogato</h4>
+              <div class="line-between"></div>
+              <span class="oswald">$3.50</span>
+            </div>
+            <div class="menu-item">
+              <h4 class="oswald">Orange Coffee</h4>
+              <div class="line-between"></div>
+              <span class="oswald">$2.50</span>
+            </div>
+            <div class="menu-item">
+              <h4 class="oswald">Ice Coffee Coke</h4>
+              <div class="line-between"></div>
+              <span class="oswald">$2.50</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="additional-drinks">
+        <div class="menu-title te menu-div">
+          <h3 class="oswald">Te</h3>
+          <div>
+            <div class="menu-item">
+              <h4 class="oswald">Infusion Frutal</h4>
+              <div class="line-between"></div>
+              <span class="oswald">$1.50</span>
+            </div>
+            <div class="menu-item">
+              <h4 class="oswald" id="matcha">Te Matcha</h4>
+              <div class="line-between"></div>
+              <span class="oswald">$1.50</span>
+            </div>
+            <div class="menu-item">
+              <h4 class="oswald">Matcha Latte</h4>
+              <div class="line-between"></div>
+              <span class="oswald">$2.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-title extras menu-div" style="padding-bottom: 20px">
+          <h3 class="oswald">Extras</h3>
+          <div>
+            <div class="menu-item">
+              <h4 class="oswald">Chantilly</h4>
+              <div class="line-between" style="border-color: black"></div>
+              <span class="oswald">$0.50</span>
+            </div>
+            <div class="menu-item">
+              <h4 class="oswald additional-drink">
+                Leche de Almendras / Avena
+              </h4>
+              <h4 class="oswald additional-drink2">
+                Leche de Almendras <br />o Avena
+              </h4>
+              <div class="line-between" style="border-color: black"></div>
+              <span class="oswald">$1.00</span>
+            </div>
+            <div class="menu-item">
+              <h4 class="oswald additional-drink">
+                Chocolate <br />
+                Condensada / Arequipe
+              </h4>
+              <h4 class="oswald additional-drink2">
+                Chocolate <br />
+                Condensada <br />
+                Arequipe
+              </h4>
+              <div class="line-between" style="border-color: black"></div>
+              <span class="oswald">$0.50</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <div class="second-menu">
+    <div class="menu-header">
+      <div class="header-a">
+        <img
+          src="/static/assets/images/logo-short-light.webp"
+          alt="Logo Light"
+        />
+        <h3 class="oswald">Menu</h3>
+      </div>
+      <div class="header-b">
+        <p class="merriweather" style="text-align: center">
+          Subimos los Precios >3
+        </p>
+      </div>
+    </div>
+    <div class="menu-content2">
+      <div class="menu-title menu-div desserts">
+        <h3 class="oswald shadow-text-invert">Desserts</h3>
+        <div>
+          <div class="menu-item" style="margin-bottom: 25px">
+            <h4 class="oswald">Torta Red Velvet</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$3.50</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 25px">
+            <h4 class="oswald">Torta de Zanahoria</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$3.50</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 25px">
+            <h4 class="oswald">Torta de Chocolate</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$3.50</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 25px">
+            <h4 class="oswald">Marquesa de Chocolate</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$3.50</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 25px">
+            <h4 class="oswald">Brownie</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$2.50</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 25px">
+            <h4 class="oswald">Brownie con Helado</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$4.00</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 25px">
+            <h4 class="oswald">Waffle Clasico</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$2.00</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 25px">
+            <h4 class="oswald">Waffle con Helado</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$4.00</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 25px">
+            <h4 class="oswald">Waffle con Frutas</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$4.00</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 25px">
+            <h4 class="oswald">Fresas con Crema</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$3.50</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 25px">
+            <h4 class="oswald">Parfait</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$4.00</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 25px">
+            <h4 class="oswald">Copa de Helado</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$3.00</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 25px">
+            <h4 class="oswald">Galletas con Helado</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$3.50</span>
+          </div>
+          <div class="menu-item">
+            <h4 class="oswald">Galletas de la Casa</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$1.00/$1.50</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-title menu-div milkshakes">
+        <h3 class="oswald">Milkshakes</h3>
+        <div>
+          <div class="menu-item" style="margin-bottom: 16.5px">
+            <h4 class="oswald">
+              Merengada <span id="choco-enigma">Choco-Enigma</span>
+            </h4>
+            <div class="line-between"></div>
+            <span class="oswald">$5.00</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 16.5px">
+            <h4 class="oswald">Merengada de Cambur</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$5.00</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 16.5px">
+            <h4 class="oswald">Merengada de Fresa</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$4.50</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 16.5px">
+            <h4 class="oswald">Merengada de Cocosette</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$4.50</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 16.5px">
+            <h4 class="oswald">Merengada de Oreo</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$4.50</span>
+          </div>
+          <div class="menu-item">
+            <h4 class="oswald">Merengada de Arequipe</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$4.50</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-title menu-div snacks">
+        <h3 class="oswald">Snacks</h3>
+        <div>
+          <div class="menu-item" style="margin-bottom: 0px">
+            <h4 class="oswald">Panini</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$4.00</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 10px">
+            <p class="open-sans-light" style="font-style: italic">
+              Clasico, Capressa o Atun... Como en Subway!!!
+            </p>
+          </div>
+          <div class="menu-item" style="margin-bottom: 0px">
+            <h4 class="oswald">Tequeños</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$3.50</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 10px">
+            <p class="open-sans-light" style="font-style: italic">
+              Nada mas 5 tequeñitos
+            </p>
+          </div>
+          <div class="menu-item">
+            <h4 class="oswald">Waffle Salado</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$3.50</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-title menu-div drinks">
+        <h3 class="oswald shadow-text-invert">Drinks</h3>
+        <div>
+          <div class="menu-item">
+            <h4 class="oswald">Limonada Clasica</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$2.00</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 0px">
+            <h4 class="oswald">Limonada Especial</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$2.50</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 10px">
+            <p class="open-sans-light" style="font-style: italic">
+              Hierba o Cafe
+            </p>
+          </div>
+          <div class="menu-item" style="margin-bottom: 0px">
+            <h4 class="oswald">Frappe</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$2.50</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 10px">
+            <p class="open-sans-light" style="font-style: italic">
+              Frutos Rojos / Amarillos / Verdes
+            </p>
+          </div>
+          <div class="menu-item" style="margin-bottom: 0px">
+            <h4 class="oswald">Soda Siciliana</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$3.00</span>
+          </div>
+          <div class="menu-item" style="margin-bottom: 10px">
+            <p class="open-sans-light" style="font-style: italic">
+              Frutos Rojos / Amarillos / Verdes
+            </p>
+          </div>
+          <div class="menu-item">
+            <h4 class="oswald">Te Helado</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$1.50</span>
+          </div>
+          <div class="menu-item">
+            <h4 class="oswald">Coca-Cola / Zero</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$1.50</span>
+          </div>
+          <div class="menu-item">
+            <h4 class="oswald">Agua Embotellada</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$1.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-title menu-div take-the-enigma">
+        <h3 class="oswald" style="margin-bottom: 0px; text-align: center">
+          Take The Enigma
+        </h3>
+        <span class="merriweather">Molido!</span>
+        <div>
+          <div class="menu-item">
+            <h4 class="oswald">200Gr</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$2.50</span>
+          </div>
+          <div class="menu-item">
+            <h4 class="oswald">500Gr</h4>
+            <div class="line-between"></div>
+            <span class="oswald">$5.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="arrows-menu" style="max-width: 1160px; margin: 0 auto">
+    <button class="left-arrow-menu arrow-dashed">
+      <i class="fa-solid fa-arrow-left fa-2x"></i>
+    </button>
+    <button class="right-arrow-menu">
+      <i class="fa-solid fa-arrow-right fa-2x"></i>
+    </button>
+  </div>
 </section>
 
 {% endblock %}

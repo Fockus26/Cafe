@@ -1,76 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Enigma Cafe" />
+    <meta property="og:site_name" content="Enigma Cafe" />
+    <meta
+      property="og:description"
+      content="A multi-page website for a local coffee shop, built with Flask, HTML, CSS, and JavaScript."
+    />
+    <meta
+      property="og:image"
+      content="https://cafe-eta-rose.vercel.app/static/assets/screenshots/Preview.png"
+    />
+    <meta property="og:url" content="https://cafe-eta-rose.vercel.app" />
+    <meta property="og:type" content="website" />
     <title>{% block title %} {% endblock %}</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='/assets/images/favicon.ico') }}" sizes="32x32">
-    <link rel="stylesheet" href="{{ url_for('static', filename='/styles.css') }}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/99b01781d1.js" crossorigin="anonymous"></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{{ url_for('static', filename='/assets/icons/favicon.ico') }}"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='/styles.css') }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/99b01781d1.js"
+      crossorigin="anonymous"
+    ></script>
     {% block style %} {% endblock %}
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="main-header">
-            <div class="main-logo">
-                <a href="{{ url_for('home') }}" class="logo nav-item">
-                    <div>
-                        <p class="oswald">Enigma</p>
+      <div class="main-header">
+        <div class="main-logo">
+          <a href="{{ url_for('home') }}" class="logo nav-item">
+            <div>
+              <p class="oswald">Enigma</p>
 
-                        <img src="{{ url_for('static', filename='/assets/images/logo-short-light.png') }}" alt="Logo Enigma Light" class="light-logo">
-                        <img src="{{ url_for('static', filename='/assets/images/logo-short-dark.png') }}" alt="Logo Enigma Dark" class="dark-logo">
-                    </div>
-                </a>
-
-                <i class="fa-solid fa-bars" id="menu"></i>
+              <img
+                src="{{ url_for('static', filename='/assets/images/logo-short-light.webp') }}"
+                alt="Logo Enigma Light"
+                class="light-logo"
+              />
+              <img
+                src="{{ url_for('static', filename='/assets/images/logo-short-dark.webp') }}"
+                alt="Logo Enigma Dark"
+                class="dark-logo"
+              />
             </div>
-            <nav class="main-nav">
-                <ul class="mobile-desktop">
-                    <li class="oswald nav-item"><div><a href="{{ url_for('home') }}">Home</a></div></li>
-                    <li class="oswald nav-item"><div><a href="{{ url_for('menu') }}">Menu</a></div></li>
-                    <li class="oswald nav-item"><div><a href="{{ url_for('contact') }}">Contact</a></div></li>
-                    <li class="oswald nav-item"><div><a href="{{ url_for('about') }}">About</a></div></li>
-                </ul>
+          </a>
 
-                <ul class="mobile-menu oswald">
-                    <a href="{{ url_for('home') }}"><li class="nav-item">Home</li></a>
-                    <a href="{{ url_for('menu') }}"><li class="nav-item">Menu</li></a>
-                    <a href="{{ url_for('contact') }}"><li class="nav-item">Contact</li></a>
-                    <a href="{{ url_for('about') }}"><li class="nav-item">About</li></a>
-                </ul>
-            </nav>
+          <i class="fa-solid fa-bars" id="menu"></i>
         </div>
+        <nav class="main-nav">
+          <ul class="mobile-desktop">
+            <li class="oswald nav-item">
+              <div><a href="{{ url_for('home') }}">Home</a></div>
+            </li>
+            <li class="oswald nav-item">
+              <div><a href="{{ url_for('menu') }}">Menu</a></div>
+            </li>
+            <li class="oswald nav-item">
+              <div><a href="{{ url_for('contact') }}">Contact</a></div>
+            </li>
+            <li class="oswald nav-item">
+              <div><a href="{{ url_for('about') }}">About</a></div>
+            </li>
+          </ul>
 
-        <section class="slide">
-            <div class="slides">
-                {% block slide %} {% endblock %}
-                {% block underscore %} {% endblock %}
-            </div>
-        </section>
+          <ul class="mobile-menu oswald">
+            <a href="{{ url_for('home') }}"><li class="nav-item">Home</li></a>
+            <a href="{{ url_for('menu') }}"><li class="nav-item">Menu</li></a>
+            <a href="{{ url_for('contact') }}"
+              ><li class="nav-item">Contact</li></a
+            >
+            <a href="{{ url_for('about') }}"><li class="nav-item">About</li></a>
+          </ul>
+        </nav>
+      </div>
+
+      <section class="slide">
+        <div class="slides">
+          {% block slide %} {% endblock %} {% block underscore %} {% endblock %}
+        </div>
+      </section>
     </header>
 
     {% block content %} {% endblock %}
 
     <footer class="main-footer">
-        <div class="container" style="padding: 0;">
-            <div class="row" style="justify-content: space-between; align-items: center;">
-                <p class="open-sans-light">&copy; Enigma Cafe</p>
-                <div class="footer-social-media">
-                    <a href="https://www.instagram.com/enigmacafe.sc/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.threads.net/@enigmacafe.sc" target="_blank"><i class="fa-brands fa-threads"></i></a>
-                    <a href="https://web.whatsapp.com/send/?phone=584147415933&text&type=phone_number&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="https://www.tiktok.com/@enigmacafe.sc" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                </div>
-                <p class="open-sans-light">{{ datetime.now().year }} All Rights Reserved</p>
-            </div>
+      <div class="container" style="padding: 0">
+        <div
+          class="row"
+          style="justify-content: space-between; align-items: center"
+        >
+          <p class="open-sans-light">&copy; Enigma Cafe</p>
+          <div class="footer-social-media">
+            <a href="https://www.instagram.com/enigmacafe.sc/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://web.whatsapp.com/send/?phone=584147415933&text&type=phone_number&app_absent=0"
+              target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a href="https://www.tiktok.com/@enigmacafe.sc" target="_blank"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </div>
+          <p class="open-sans-light">
+            {{ datetime.now().year }} All Rights Reserved
+          </p>
         </div>
+      </div>
     </footer>
     <script src="{{ url_for('static', filename='/index.js') }}"></script>
     {% block script %} {% endblock %}
-</body>
+  </body>
 </html>

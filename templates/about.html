@@ -1,439 +1,550 @@
-{% extends('base.html') %}
-{% block title %} About {% endblock %}
-{% block slide %}
-<div class="slide-item" style="background-image: url(/static/assets/images/header/5.jpg);">
-    <div class="slide-content">
-        <h1 class="slide-title oswald">Meet More<br>About Us!</h1>
-        <p class="slide-text merriweather">A super toxic team e.g Maria :)</p>
-    </div>
+{% extends('base.html') %} {% block title %} About {% endblock %} {% block slide
+%}
+<div
+  class="slide-item"
+  style="background-image: url(/static/assets/images/header/5.webp)"
+>
+  <div class="slide-content">
+    <h1 class="slide-title oswald">Meet More<br />About Us!</h1>
+    <p class="slide-text merriweather">A super toxic team e.g Maria :)</p>
+  </div>
 </div>
-{% endblock %}
-{% block content %}
+{% endblock %} {% block content %}
 
 <section class="container">
-    <div class="row" style="flex-direction: column;">
+  <div class="row" style="flex-direction: column">
+    <div>
+      <h2 class="oswald" style="font-size: 35px; text-align: center">
+        Meet Our Team
+      </h2>
+      <div class="divider line-divider"></div>
+    </div>
+    <div class="our-team">
+      <div class="card-team">
+        <img src="/static/assets/images/team/1.webp" alt="Ricky" />
         <div>
-            <h2 class="oswald" style="font-size: 35px; text-align: center;">Meet Our Team</h2>
-            <div class="divider line-divider"></div>
+          <h4 class="oswald">Ricky Mejia</h4>
         </div>
-        <div class="our-team">
-            <div class="card-team">
-                <img src="/static/assets/images/team/1.jpg" alt="Ricky">
-                <div>
-                    <h4 class="oswald">Ricky Mejia</h4>
-                </div>
-                <span class="merriweather">Owner / CryptoManiac</span>
-                <p class="open-sans-light">Comenzo su vida a los 19 años cuando fue a descubrir el asombroso mundo de Colombia... o Ecuador, o era Estados Unidos?. Como sea tiene asombrosas habilidades en el LOL y como mesonero
-                </p>
-                <a href="https://www.instagram.com/rickyjav/" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
-            </div>
-            <div class="card-team">
-                <img src="/static/assets/images/team/2.jpg" alt="Henry">
-                <div>
-                    <h4 class="oswald">Henry Mejia</h4>
-                </div>
-                <span class="merriweather">Owner / PsychoGamer</span>
-                <p class="open-sans-light">Ok no se mucho, pero su determinacion es tan larga como la duracion de su relacion. Por cierto, ten cuidado al mostrarle un juego podria, solo podria obsesionarse un poquito
-                </p>
-            </div>
-            <div class="card-team">
-                <img src="/static/assets/images/team/6.jpg" alt="Nefer">
-                <div>
-                    <h4 class="oswald">Nefer</h4>
-                </div>
-                <span class="merriweather">Owner / Influencer Attempt</span>
-                <p class="open-sans-light">El misterio de su vida es igual al misterio de porque no han despedido a Maria. Si le das una camara no dudara en intentar subir de seguidores y ser famosa, por algo aparece en el 80% del feed de Enigma 💁🏻‍♀️
-                </p>
-                <a href="https://www.instagram.com/neferli/" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
-            </div>
+        <span class="merriweather">Owner / CryptoManiac</span>
+        <p class="open-sans-light">
+          Comenzo su vida a los 19 años cuando fue a descubrir el asombroso
+          mundo de Colombia... o Ecuador, o era Estados Unidos?. Como sea tiene
+          asombrosas habilidades en el LOL y como mesonero
+        </p>
+        <a href="https://www.instagram.com/rickyjav/" target="_blank"
+          ><i class="fa-brands fa-instagram fa-lg"></i
+        ></a>
+      </div>
+      <div class="card-team">
+        <img src="/static/assets/images/team/2.webp" alt="Henry" />
+        <div>
+          <h4 class="oswald">Henry Mejia</h4>
         </div>
+        <span class="merriweather">Owner / PsychoGamer</span>
+        <p class="open-sans-light">
+          Ok no se mucho, pero su determinacion es tan larga como la duracion de
+          su relacion. Por cierto, ten cuidado al mostrarle un juego podria,
+          solo podria obsesionarse un poquito
+        </p>
+      </div>
+      <div class="card-team">
+        <img src="/static/assets/images/team/3.webp" alt="Nefer" />
+        <div>
+          <h4 class="oswald">Nefer</h4>
+        </div>
+        <span class="merriweather">Owner / Influencer Attempt</span>
+        <p class="open-sans-light">
+          El misterio de su vida es igual al misterio de porque no han despedido
+          a Maria. Si le das una camara no dudara en intentar subir de
+          seguidores y ser famosa, por algo aparece en el 80% del feed de Enigma
+          💁🏻‍♀️
+        </p>
+        <a href="https://www.instagram.com/neferli/" target="_blank"
+          ><i class="fa-brands fa-instagram fa-lg"></i
+        ></a>
+      </div>
     </div>
+  </div>
 </section>
 
-<section style="background-color: #c7a17a;">
-    <div class="container">
-        <div class="row container-skills" style="justify-content: space-between; align-items: center;">
-            <div>
-                <h3 class="oswald">Our Skills</h3>
-                <div class="line-divider"></div>
-                <p class="open-sans">Our Baristas are prepared in all possible areas for give you the best experience, but just don't do one thing... flirt with the Barista</p>
-            </div>
-            <div class="our-skills">
-                <div class="skill-box">
-                    <h4 class="oswald">Comfort</h4>
-                    <div class="skill-bar">
-                        <span class="skill-per comfort">
-                            <span class="tooltip">90%</span>
-                        </span>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <h4 class="oswald">Attention CLient</h4>
-                    <div class="skill-bar">
-                        <span class="skill-per attention">
-                            <span class="tooltip">80%</span>
-                        </span>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <h4 class="oswald">Flavours</h4>
-                    <div class="skill-bar">
-                        <span class="skill-per flavours">
-                            <span class="tooltip">70%</span>
-                        </span>
-                    </div>
-                </div>
-            </div>
+<section style="background-color: #c7a17a">
+  <div class="container">
+    <div
+      class="row container-skills"
+      style="justify-content: space-between; align-items: center"
+    >
+      <div>
+        <h3 class="oswald">Our Skills</h3>
+        <div class="line-divider"></div>
+        <p class="open-sans">
+          Our Baristas are prepared in all possible areas for give you the best
+          experience, but just don't do one thing... flirt with the Barista
+        </p>
+      </div>
+      <div class="our-skills">
+        <div class="skill-box">
+          <h4 class="oswald">Comfort</h4>
+          <div class="skill-bar">
+            <span class="skill-per comfort">
+              <span class="tooltip">90%</span>
+            </span>
+          </div>
         </div>
+        <div class="skill-box">
+          <h4 class="oswald">Attention CLient</h4>
+          <div class="skill-bar">
+            <span class="skill-per attention">
+              <span class="tooltip">80%</span>
+            </span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <h4 class="oswald">Flavours</h4>
+          <div class="skill-bar">
+            <span class="skill-per flavours">
+              <span class="tooltip">70%</span>
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <section class="container">
-    <div class="row" style="flex-direction: column;">
-        <div class="about-features">
-            <div class="feature-item">
-                <i class="fa-solid fa-wifi fa-2x"></i>
-                <div>
-                    <h4 class="oswald">Wifi Unlimited</h4>
-                    <p class="open-sans-light">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                </div>
-            </div>
-            <div class="feature-item">
-                <i class="fa-regular fa-lightbulb fa-2x"></i>
-                <div>
-                    <h4 class="oswald">Electricity Forever</h4>
-                    <p class="open-sans-light">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                </div>
-            </div>
-            <div class="feature-item">
-                <i class="fa-solid fa-laptop fa-2x"></i>
-                <div>
-                    <h4 class="oswald">Free Coworking</h4>
-                    <p class="open-sans-light">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                </div>
-            </div>
-            <div class="feature-item">
-                <i class="fa-solid fa-headphones fa-2x"></i>
-                <div>
-                    <h4 class="oswald">The Best Music</h4>
-                    <p class="open-sans-light">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                </div>
-            </div>
-            <div class="feature-item">
-                <i class="fa-solid fa-guitar fa-2x"></i>
-                <div>
-                    <h4 class="oswald">Enjoy of Events</h4>
-                    <p class="open-sans-light">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                </div>
-            </div>
-            <div class="feature-item">
-                <i class="fa-solid fa-tags fa-2x"></i>
-                <div>
-                    <h4 class="oswald">Suddenly Offers</h4>
-                    <p class="open-sans-light">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                </div>
-            </div>
+  <div class="row" style="flex-direction: column">
+    <div class="about-features">
+      <div class="feature-item">
+        <i class="fa-solid fa-wifi fa-2x"></i>
+        <div>
+          <h4 class="oswald">Wifi Unlimited</h4>
+          <p class="open-sans-light">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit
+          </p>
         </div>
+      </div>
+      <div class="feature-item">
+        <i class="fa-regular fa-lightbulb fa-2x"></i>
+        <div>
+          <h4 class="oswald">Electricity Forever</h4>
+          <p class="open-sans-light">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit
+          </p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <i class="fa-solid fa-laptop fa-2x"></i>
+        <div>
+          <h4 class="oswald">Free Coworking</h4>
+          <p class="open-sans-light">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit
+          </p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <i class="fa-solid fa-headphones fa-2x"></i>
+        <div>
+          <h4 class="oswald">The Best Music</h4>
+          <p class="open-sans-light">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit
+          </p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <i class="fa-solid fa-guitar fa-2x"></i>
+        <div>
+          <h4 class="oswald">Enjoy of Events</h4>
+          <p class="open-sans-light">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit
+          </p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <i class="fa-solid fa-tags fa-2x"></i>
+        <div>
+          <h4 class="oswald">Suddenly Offers</h4>
+          <p class="open-sans-light">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit
+          </p>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <section id="process">
-    <div class="container">
-        <div class="row" style="flex-direction: column;">
-            <div class="container-process   ">
-                <h2 class="oswald" style="font-size: 35px; text-align: center;">Meet The Enigma</h2>
-                <div class="divider line-divider"></div>
-            </div>
+  <div class="container">
+    <div class="row" style="flex-direction: column">
+      <div class="container-process">
+        <h2 class="oswald" style="font-size: 35px; text-align: center">
+          Meet The Enigma
+        </h2>
+        <div class="divider line-divider"></div>
+      </div>
 
-            <ul class="list-process">
-                <li>
-                    <i id="first-icon" class="fa-solid fa-seedling fa-lg" style="color: #c57120;"></i>
-                    <div class="progress-process one active">
-                        <p class="oswald">1</p>
-                        <i class="fa-solid fa-check"></i>
-                    </div>
-                    <p class="oswald">Raw Coffee Beans</p>
-                </li>
+      <ul class="list-process">
+        <li>
+          <i
+            id="first-icon"
+            class="fa-solid fa-seedling fa-lg"
+            style="color: #c57120"
+          ></i>
+          <div class="progress-process one active">
+            <p class="oswald">1</p>
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <p class="oswald">Raw Coffee Beans</p>
+        </li>
 
-                <li>
-                    <i id="second-icon" class="fa-solid fa-tablets fa-lg"></i>
-                    <div class="progress-process two">
-                        <p class="oswald">2</p>
-                        <i class="fa-solid fa-check"></i>
-                    </div>
-                    <p class="oswald">Coffee Roastery</p>
-                </li>
+        <li>
+          <i id="second-icon" class="fa-solid fa-tablets fa-lg"></i>
+          <div class="progress-process two">
+            <p class="oswald">2</p>
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <p class="oswald">Coffee Roastery</p>
+        </li>
 
-                <li>
-                    <i id="third-icon" class="fa-solid fa-fire-burner fa-lg"></i>
-                    <div class="progress-process three">
-                        <p class="oswald">3</p>
-                        <i class="fa-solid fa-check"></i>
-                    </div>
-                    <p class="oswald">Roasting Coffee Beans</p>
-                </li>
+        <li>
+          <i id="third-icon" class="fa-solid fa-fire-burner fa-lg"></i>
+          <div class="progress-process three">
+            <p class="oswald">3</p>
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <p class="oswald">Roasting Coffee Beans</p>
+        </li>
 
-                <li>
-                    <i id="fourth-icon" class="fa-solid fa-mug-hot fa-lg"></i>
-                    <div class="progress-process four">
-                        <p class="oswald">4</p>
-                        <i class="fa-solid fa-check"></i>
-                    </div>
-                    <p class="oswald">Packaging Coffee</p>
-                </li>
+        <li>
+          <i id="fourth-icon" class="fa-solid fa-mug-hot fa-lg"></i>
+          <div class="progress-process four">
+            <p class="oswald">4</p>
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <p class="oswald">Packaging Coffee</p>
+        </li>
+      </ul>
+
+      <div class="slides-process">
+        <div class="slide-item-process first active">
+          <div class="slide-content-process">
+            <p class="open-sans">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+              officia mollitia eum recusandae expedita necessitatibus accusamus
+            </p>
+            <ul>
+              <li class="open-sans">
+                <i class="fa-solid fa-check"></i> Alienum phaedrum torquatos.
+              </li>
+              <li class="open-sans">
+                <i class="fa-solid fa-check"></i> Eos ei nisl graecis, vix
+                aperiri consequat.
+              </li>
+              <li class="open-sans">
+                <i class="fa-solid fa-check"></i> Eius lorem tincidunt vixat.
+              </li>
             </ul>
-
-            <div class="slides-process">
-                <div class="slide-item-process first active">
-                    <div class="slide-content-process">
-                        <p class="open-sans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, officia mollitia eum recusandae expedita necessitatibus accusamus</p>
-                        <ul>
-                            <li class="open-sans"><i class="fa-solid fa-check"></i> Alienum phaedrum torquatos.</li>
-                            <li class="open-sans"><i class="fa-solid fa-check"></i> Eos ei nisl graecis, vix aperiri consequat.</li>
-                            <li class="open-sans"><i class="fa-solid fa-check"></i> Eius lorem tincidunt vixat.</li>
-                        </ul>
-                    </div>
-                    <img src="/static/assets/images/process/1.jpg" alt="Process Coffee">
-                </div>
-                <div class="slide-item-process second">
-                    <img src="/static/assets/images/process/2.jpg" alt="Process Coffee" style="margin-right: 50px; animation: animate1 .5s ease-in-out 0.2s 1 forwards;">
-                    <div class="slide-content-process" style="margin-right: 0;">
-                        <p class="open-sans" style="margin-bottom: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, officia mollitia eum recusandae</p>
-                        <div style="display: flex; flex-direction: column; width: 90%;">
-                            <div class="skill-box">
-                                <h4 class="oswald">Design</h4>
-                                <div class="skill-bar" style="background-color: white;">
-                                    <span class="skill-per design" style="background-color: #c57120;">
-                                        <span class="tooltip" style="color: #c57120;">50%</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="skill-box" style="margin-bottom: 0px; margin-top: 30px;">
-                                <h4 class="oswald">Development</h4>
-                                <div class="skill-bar" style="background-color: white;">
-                                    <span class="skill-per development" style="background-color: #c57120;">
-                                        <span class="tooltip" style="color: #c57120;">65%</span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide-item-process third">
-                    <div class="slide-content-process">
-                        <p class="open-sans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, officia mollitia eum recusandae expedita necessitatibus accusamus recusandae expedita necessitatibus accusamus</p>
-                        <button class="slide-process-button open-sans">See More</button>
-                    </div>
-                    <img src="/static/assets/images/process/3.jpg" alt="Process Coffee">
-                </div>
-                <div class="slide-item-process fourth">
-                    <img src="/static/assets/images/process/4.jpg" alt="Process Coffee" style="animation: animate1 .5s ease-in-out 0.2s 1 forwards; margin-right: 50px;">
-                    <div class="slide-content-process" style="margin-right: 0;">
-                        <p class="open-sans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, officia mollitia eum recusandae expedita necessitatibus accusamus</p>
-                        <ul>
-                            <li class="open-sans"><i class="fa-solid fa-check"></i> Alienum phaedrum torquatos.</li>
-                            <li class="open-sans"><i class="fa-solid fa-check"></i> Eos ei nisl graecis, vix aperiri consequat.</li>
-                            <li class="open-sans"><i class="fa-solid fa-check"></i> Eius lorem tincidunt vixat.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <img
+            src="/static/assets/images/process/1.webp"
+            alt="Process Coffee"
+          />
         </div>
+        <div class="slide-item-process second">
+          <img
+            src="/static/assets/images/process/2.webp"
+            alt="Process Coffee"
+            style="
+              margin-right: 50px;
+              animation: animate1 0.5s ease-in-out 0.2s 1 forwards;
+            "
+          />
+          <div class="slide-content-process" style="margin-right: 0">
+            <p class="open-sans" style="margin-bottom: 30px">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+              officia mollitia eum recusandae
+            </p>
+            <div style="display: flex; flex-direction: column; width: 90%">
+              <div class="skill-box">
+                <h4 class="oswald">Design</h4>
+                <div class="skill-bar" style="background-color: white">
+                  <span
+                    class="skill-per design"
+                    style="background-color: #c57120"
+                  >
+                    <span class="tooltip" style="color: #c57120">50%</span>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="skill-box"
+                style="margin-bottom: 0px; margin-top: 30px"
+              >
+                <h4 class="oswald">Development</h4>
+                <div class="skill-bar" style="background-color: white">
+                  <span
+                    class="skill-per development"
+                    style="background-color: #c57120"
+                  >
+                    <span class="tooltip" style="color: #c57120">65%</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide-item-process third">
+          <div class="slide-content-process">
+            <p class="open-sans">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+              officia mollitia eum recusandae expedita necessitatibus accusamus
+              recusandae expedita necessitatibus accusamus
+            </p>
+            <button class="slide-process-button open-sans">See More</button>
+          </div>
+          <img
+            src="/static/assets/images/process/3.webp"
+            alt="Process Coffee"
+          />
+        </div>
+        <div class="slide-item-process fourth">
+          <img
+            src="/static/assets/images/process/4.webp"
+            alt="Process Coffee"
+            style="
+              animation: animate1 0.5s ease-in-out 0.2s 1 forwards;
+              margin-right: 50px;
+            "
+          />
+          <div class="slide-content-process" style="margin-right: 0">
+            <p class="open-sans">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+              officia mollitia eum recusandae expedita necessitatibus accusamus
+            </p>
+            <ul>
+              <li class="open-sans">
+                <i class="fa-solid fa-check"></i> Alienum phaedrum torquatos.
+              </li>
+              <li class="open-sans">
+                <i class="fa-solid fa-check"></i> Eos ei nisl graecis, vix
+                aperiri consequat.
+              </li>
+              <li class="open-sans">
+                <i class="fa-solid fa-check"></i> Eius lorem tincidunt vixat.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<section style="background-color: #c7a17a;">
-<div class="container">
-    <div class="row container-quote" style="flex-direction: column; text-align: center;">
-        <i class="fa-solid fa-quote-left"></i>
-        <div class="slide-quote">
-            <div class="slide-quote-content first active">
-                <p class="merriweather">La primera vez que probe "El Enigma" pense que estaba en un sueño, sus sabores intensos a cacao me hacian dudar en si compartir o no mi taza de cafe, asi que decidi volverme egoista</p>
-                <h4 class="oswald">Cesar Leon</h4>
-            </div>
-            <div class="slide-quote-content second">
-                <p class="merriweather"><del class="merriweather">El cafe para mi es tan solo una forma de ganar dinero.</del> El cafe para mi es una obra de arte, admiro el lienzo de arte latte que los baristas preparan con amor, y una vez he probado su delicioso sabor puedo empezar mi dia</p>
-                <h4 class="oswald">Henry Mejia</h4>
-            </div>
-            <div class="slide-quote-content third">
-                <p class="merriweather">No tengo mucho que decir, ya que mis 4 lattes diarios hablan por mi.</p>
-                <h4 class="oswald">Ricky Mejia</h4>
-            </div>
+<section style="background-color: #c7a17a">
+  <div class="container">
+    <div
+      class="row container-quote"
+      style="flex-direction: column; text-align: center"
+    >
+      <i class="fa-solid fa-quote-left"></i>
+      <div class="slide-quote">
+        <div class="slide-quote-content first active">
+          <p class="merriweather">
+            La primera vez que probe "El Enigma" pense que estaba en un sueño,
+            sus sabores intensos a cacao me hacian dudar en si compartir o no mi
+            taza de cafe, asi que decidi volverme egoista
+          </p>
+          <h4 class="oswald">Cesar Leon</h4>
         </div>
-        <div class="slide-quote-button">
-            <span class="first active"></span>
-            <span class="second"></span>
-            <span class="third"></span>
+        <div class="slide-quote-content second">
+          <p class="merriweather">
+            <del class="merriweather"
+              >El cafe para mi es tan solo una forma de ganar dinero.</del
+            >
+            El cafe para mi es una obra de arte, admiro el lienzo de arte latte
+            que los baristas preparan con amor, y una vez he probado su
+            delicioso sabor puedo empezar mi dia
+          </p>
+          <h4 class="oswald">Henry Mejia</h4>
         </div>
+        <div class="slide-quote-content third">
+          <p class="merriweather">
+            No tengo mucho que decir, ya que mis 4 lattes diarios hablan por mi.
+          </p>
+          <h4 class="oswald">Ricky Mejia</h4>
+        </div>
+      </div>
+      <div class="slide-quote-button">
+        <span class="first active"></span>
+        <span class="second"></span>
+        <span class="third"></span>
+      </div>
     </div>
-</div>
+  </div>
 </section>
-{% endblock %}
-
-{% block script %}
+{% endblock %} {% block script %}
 <script>
-    // Progress Bar
-    var one = document.querySelector(".one");
-    var two = document.querySelector(".two");
-    var three = document.querySelector(".three");
-    var four = document.querySelector(".four");
+  // Progress Bar
+  var one = document.querySelector(".one");
+  var two = document.querySelector(".two");
+  var three = document.querySelector(".three");
+  var four = document.querySelector(".four");
 
-    var firstIcon = document.querySelector("#first-icon")
-    var secondIcon = document.querySelector("#second-icon")
-    var thirdIcon = document.querySelector("#third-icon")
-    var fourthIcon = document.querySelector("#fourth-icon")
+  var firstIcon = document.querySelector("#first-icon");
+  var secondIcon = document.querySelector("#second-icon");
+  var thirdIcon = document.querySelector("#third-icon");
+  var fourthIcon = document.querySelector("#fourth-icon");
 
-    one.onclick = function() {
-        one.classList.add("active")
-        firstIcon.style.color = "#c57120"
-        secondIcon.style.color = "white"
-        thirdIcon.style.color = "white"
-        fourthIcon.style.color = "white"
+  one.onclick = function () {
+    one.classList.add("active");
+    firstIcon.style.color = "#c57120";
+    secondIcon.style.color = "white";
+    thirdIcon.style.color = "white";
+    fourthIcon.style.color = "white";
 
-        if (four.classList.contains("active")) {
-            four.classList.remove("active")
-            setTimeout (function() {
-                three.classList.remove("active")
-                setTimeout (function() {
-                    two.classList.remove("active")
-                }, 250);
-            }, 250);
-        } else if (three.classList.contains("active")) {
-            three.classList.remove("active")
-            setTimeout (function() {
-                two.classList.remove("active")
-            }, 250);
-        } else {
-            two.classList.remove("active")
-        }
+    if (four.classList.contains("active")) {
+      four.classList.remove("active");
+      setTimeout(function () {
+        three.classList.remove("active");
+        setTimeout(function () {
+          two.classList.remove("active");
+        }, 250);
+      }, 250);
+    } else if (three.classList.contains("active")) {
+      three.classList.remove("active");
+      setTimeout(function () {
+        two.classList.remove("active");
+      }, 250);
+    } else {
+      two.classList.remove("active");
     }
+  };
 
-    two.onclick = function() {
-        one.classList.add("active")
-        two.classList.add("active")
-        secondIcon.style.color = "#c57120"
-        thirdIcon.style.color = "white"
-        fourthIcon.style.color = "white"
-        if (four.classList.contains("active")) {
-            four.classList.remove("active")
-            setTimeout (function() {
-                three.classList.remove("active")
-            }, 250);
-        } else {
-            three.classList.remove("active")
-        }
+  two.onclick = function () {
+    one.classList.add("active");
+    two.classList.add("active");
+    secondIcon.style.color = "#c57120";
+    thirdIcon.style.color = "white";
+    fourthIcon.style.color = "white";
+    if (four.classList.contains("active")) {
+      four.classList.remove("active");
+      setTimeout(function () {
+        three.classList.remove("active");
+      }, 250);
+    } else {
+      three.classList.remove("active");
     }
+  };
 
-    three.onclick = function() {
-        one.classList.add("active")
-        secondIcon.style.color = "#c57120"
-        thirdIcon.style.color = "#c57120"
-        fourthIcon.style.color = "white"
-        if (! two.classList.contains("active")) {
-            two.classList.add("active")
-            setTimeout (function() {
-                three.classList.add("active")
-            }, 250);
-        } else {
-            three.classList.add("active")
-        }
-        four.classList.remove("active")
+  three.onclick = function () {
+    one.classList.add("active");
+    secondIcon.style.color = "#c57120";
+    thirdIcon.style.color = "#c57120";
+    fourthIcon.style.color = "white";
+    if (!two.classList.contains("active")) {
+      two.classList.add("active");
+      setTimeout(function () {
+        three.classList.add("active");
+      }, 250);
+    } else {
+      three.classList.add("active");
     }
+    four.classList.remove("active");
+  };
 
-    four.onclick = function() {
-        one.classList.add("active")
-        secondIcon.style.color = "#c57120"
-        thirdIcon.style.color = "#c57120"
-        fourthIcon.style.color = "#c57120"
-        if (! two.classList.contains("active")) {
-            two.classList.add("active")
-            setTimeout (function() {
-                three.classList.add("active")
-                setTimeout (function() {
-                    four.classList.add("active")
-                }, 250);
-            }, 250);
-        } else if (! three.classList.contains("active")) {
-            three.classList.add("active")
-            setTimeout (function() {
-                four.classList.add("active")
-            }, 250);
-        } else {
-            four.classList.add("active")
-        }
+  four.onclick = function () {
+    one.classList.add("active");
+    secondIcon.style.color = "#c57120";
+    thirdIcon.style.color = "#c57120";
+    fourthIcon.style.color = "#c57120";
+    if (!two.classList.contains("active")) {
+      two.classList.add("active");
+      setTimeout(function () {
+        three.classList.add("active");
+        setTimeout(function () {
+          four.classList.add("active");
+        }, 250);
+      }, 250);
+    } else if (!three.classList.contains("active")) {
+      three.classList.add("active");
+      setTimeout(function () {
+        four.classList.add("active");
+      }, 250);
+    } else {
+      four.classList.add("active");
     }
+  };
 
-    // Shift Slides Process
+  // Shift Slides Process
 
-    var firstSlide = document.querySelector(".slide-item-process.first");
-    var secondSlide = document.querySelector(".slide-item-process.second");
-    var thirdSlide = document.querySelector(".slide-item-process.third");
-    var fourthSlide = document.querySelector(".slide-item-process.fourth");
+  var firstSlide = document.querySelector(".slide-item-process.first");
+  var secondSlide = document.querySelector(".slide-item-process.second");
+  var thirdSlide = document.querySelector(".slide-item-process.third");
+  var fourthSlide = document.querySelector(".slide-item-process.fourth");
 
-    one.addEventListener('click', function() {
-        showSlide(firstSlide);
-    });
+  one.addEventListener("click", function () {
+    showSlide(firstSlide);
+  });
 
-    two.addEventListener('click', function() {
-        showSlide(secondSlide);
-    });
+  two.addEventListener("click", function () {
+    showSlide(secondSlide);
+  });
 
-    three.addEventListener('click', function() {
-        showSlide(thirdSlide);
-    });
+  three.addEventListener("click", function () {
+    showSlide(thirdSlide);
+  });
 
-    four.addEventListener('click', function() {
-        showSlide(fourthSlide);
-    });
+  four.addEventListener("click", function () {
+    showSlide(fourthSlide);
+  });
 
-    function showSlide(slide) {
-        hideAllSlides();
-        slide.classList.add('active');
-    }
+  function showSlide(slide) {
+    hideAllSlides();
+    slide.classList.add("active");
+  }
 
-    function hideAllSlides() {
-        firstSlide.classList.remove('active');
-        secondSlide.classList.remove('active');
-        thirdSlide.classList.remove('active');
-        fourthSlide.classList.remove('active');
-    }
+  function hideAllSlides() {
+    firstSlide.classList.remove("active");
+    secondSlide.classList.remove("active");
+    thirdSlide.classList.remove("active");
+    fourthSlide.classList.remove("active");
+  }
 
-    // Shift Slides Quotes
+  // Shift Slides Quotes
 
-    var firstQuoteSlide = document.querySelector(".slide-quote-content.first");
-    var secondQuoteSlide = document.querySelector(".slide-quote-content.second");
-    var thirdQuoteSlide = document.querySelector(".slide-quote-content.third");
+  var firstQuoteSlide = document.querySelector(".slide-quote-content.first");
+  var secondQuoteSlide = document.querySelector(".slide-quote-content.second");
+  var thirdQuoteSlide = document.querySelector(".slide-quote-content.third");
 
-    var firstDot = document.querySelector(".slide-quote-button span.first");
-    var secondDot = document.querySelector(".slide-quote-button span.second");
-    var thirdDot = document.querySelector(".slide-quote-button span.third");
+  var firstDot = document.querySelector(".slide-quote-button span.first");
+  var secondDot = document.querySelector(".slide-quote-button span.second");
+  var thirdDot = document.querySelector(".slide-quote-button span.third");
 
-    firstDot.addEventListener('click', function() {
-        showDotSlide(firstQuoteSlide, firstDot);
-    });
+  firstDot.addEventListener("click", function () {
+    showDotSlide(firstQuoteSlide, firstDot);
+  });
 
-    secondDot.addEventListener('click', function() {
-        showDotSlide(secondQuoteSlide, secondDot);
-    });
+  secondDot.addEventListener("click", function () {
+    showDotSlide(secondQuoteSlide, secondDot);
+  });
 
-    thirdDot.addEventListener('click', function() {
-        showDotSlide(thirdQuoteSlide, thirdDot);
-    });
+  thirdDot.addEventListener("click", function () {
+    showDotSlide(thirdQuoteSlide, thirdDot);
+  });
 
-    function showDotSlide(slide, dot) {
-        hideAllDotSlides();
-        slide.classList.add('active');
-        dot.classList.add('active');
-    }
+  function showDotSlide(slide, dot) {
+    hideAllDotSlides();
+    slide.classList.add("active");
+    dot.classList.add("active");
+  }
 
-    function hideAllDotSlides() {
-        firstDot.classList.remove('active');
-        secondDot.classList.remove('active');
-        thirdDot.classList.remove('active');
+  function hideAllDotSlides() {
+    firstDot.classList.remove("active");
+    secondDot.classList.remove("active");
+    thirdDot.classList.remove("active");
 
-        firstQuoteSlide.classList.remove('active');
-        secondQuoteSlide.classList.remove('active');
-        thirdQuoteSlide.classList.remove('active');
-    }
+    firstQuoteSlide.classList.remove("active");
+    secondQuoteSlide.classList.remove("active");
+    thirdQuoteSlide.classList.remove("active");
+  }
 </script>
 {% endblock %}
